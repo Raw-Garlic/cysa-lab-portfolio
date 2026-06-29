@@ -1,0 +1,19 @@
+06/29/2026-13:05:24.886789  [**] [1:9000001:1] ICMP Ping Detected - Lab 09 [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.40.7:8 -> 192.168.40.3:0
+06/29/2026-13:05:25.907660  [**] [1:9000001:1] ICMP Ping Detected - Lab 09 [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.40.7:8 -> 192.168.40.3:0
+06/29/2026-13:05:26.931642  [**] [1:9000001:1] ICMP Ping Detected - Lab 09 [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.40.7:8 -> 192.168.40.3:0
+06/29/2026-13:05:27.956433  [**] [1:9000001:1] ICMP Ping Detected - Lab 09 [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.40.7:8 -> 192.168.40.3:0
+06/29/2026-13:05:28.958406  [**] [1:9000001:1] ICMP Ping Detected - Lab 09 [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.40.7:8 -> 192.168.40.3:0
+06/29/2026-13:05:39.182850  [**] [1:9000002:1] HTTP Traffic to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:54018 -> 192.168.40.3:80
+06/29/2026-13:05:39.290111  [**] [1:9000002:1] HTTP Traffic to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:54018 -> 192.168.40.3:80
+06/29/2026-13:05:39.290938  [**] [1:9000002:1] HTTP Traffic to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:54018 -> 192.168.40.3:80
+06/29/2026-13:05:39.292464  [**] [1:9000002:1] HTTP Traffic to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:54018 -> 192.168.40.3:80
+06/29/2026-13:05:39.292551  [**] [1:9000002:1] HTTP Traffic to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:54018 -> 192.168.40.3:80
+06/29/2026-13:05:39.292923  [**] [1:9000002:1] HTTP Traffic to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:54018 -> 192.168.40.3:80
+06/29/2026-13:05:58.559594  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.559982  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.560350  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.564887  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.565290  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.565294  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.566223  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
+06/29/2026-13:05:58.566561  [**] [1:9000003:1] SSH Connection Attempt to Metasploitable2 - Lab 09 [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.40.7:39918 -> 192.168.40.3:22
