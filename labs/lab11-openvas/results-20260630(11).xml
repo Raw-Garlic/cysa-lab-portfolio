@@ -1,0 +1,379 @@
+<get_results_response status="200" status_text="OK"><result id="03c85b1f-ca87-4c55-ad2a-92331c908c16"><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5432/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103441"><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2012-03-01T16:16:10Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites
+  accepted by a service.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2024-09-27T05:05:23Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>&apos;Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="f3927ec2-f3ae-4c94-9d86-55879dfaed9e"><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103441"><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2012-03-01T16:16:10Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites
+  accepted by a service.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2024-09-27T05:05:23Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>&apos;Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="56b694be-055d-4d37-86a2-d20bc754b2d1"><name>SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105018"><type>nvt</type><name>SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2014-05-06T13:16:10Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all SSL/TLS cipher suites accepted by a
+  service which are supporting Perfect Forward Secrecy (PFS).|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-03-13T05:54:58Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="6d332b8c-9e04-4712-a2e5-8409d645cfde"><name>SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5432/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105018"><type>nvt</type><name>SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2014-05-06T13:16:10Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all SSL/TLS cipher suites accepted by a
+  service which are supporting Perfect Forward Secrecy (PFS).|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-03-13T05:54:58Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="70566da4-23b5-4f11-bf2c-31d218778f12"><name>SSL/TLS: Report Supported Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5432/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.802067"><type>nvt</type><name>SSL/TLS: Report Supported Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2014-03-06T11:50:28Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all SSL/TLS cipher suites accepted by a
+  service.|insight=Notes:
+
+  - As the VT &apos;SSL/TLS: Check Supported Cipher Suites&apos; (OID: 1.3.6.1.4.1.25623.1.0.900234) might run
+  into a timeout the actual reporting of all accepted cipher suites takes place in this VT instead.
+
+  - SSLv2 ciphers are not getting reported as the protocol itself is deprecated, needs to be
+  considered as weak and is reported separately as deprecated.|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-03-13T05:54:58Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>&apos;Strong&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+No &apos;Null&apos; cipher suites accepted by this service via the SSLv3 protocol.
+
+No &apos;Anonymous&apos; cipher suites accepted by this service via the SSLv3 protocol.
+
+&apos;Strong&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+No &apos;Null&apos; cipher suites accepted by this service via the TLSv1.0 protocol.
+
+No &apos;Anonymous&apos; cipher suites accepted by this service via the TLSv1.0 protocol.
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="29506f00-5e88-4cfb-8594-513220635044"><name>SSL/TLS: Report Supported Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.802067"><type>nvt</type><name>SSL/TLS: Report Supported Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2014-03-06T11:50:28Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all SSL/TLS cipher suites accepted by a
+  service.|insight=Notes:
+
+  - As the VT &apos;SSL/TLS: Check Supported Cipher Suites&apos; (OID: 1.3.6.1.4.1.25623.1.0.900234) might run
+  into a timeout the actual reporting of all accepted cipher suites takes place in this VT instead.
+
+  - SSLv2 ciphers are not getting reported as the protocol itself is deprecated, needs to be
+  considered as weak and is reported separately as deprecated.|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-03-13T05:54:58Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>&apos;Strong&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+No &apos;Null&apos; cipher suites accepted by this service via the SSLv3 protocol.
+
+&apos;Anonymous&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_DES_CBC_SHA
+TLS_DH_anon_WITH_RC4_128_MD5
+
+&apos;Strong&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+No &apos;Null&apos; cipher suites accepted by this service via the TLSv1.0 protocol.
+
+&apos;Anonymous&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_DES_CBC_SHA
+TLS_DH_anon_WITH_RC4_128_MD5
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="7c6682ca-77fc-4939-9455-7f2d9640e10f"><name>SSL/TLS: Report Weak Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5432/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103440"><type>nvt</type><name>SSL/TLS: Report Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>5.9</cvss_base><severities score="5.9"><severity type="cvss_base_v3"><origin>NVD</origin><date>2020-11-23T19:48:00Z</date><score>5.9</score><value>CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N</value></severity></severities><tags>cvss_base_vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N|summary=This routine reports all weak SSL/TLS cipher suites accepted by
+  a service.|insight=These rules are applied for the evaluation of the cryptographic
+  strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808)
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods and
+  therefore considered as weak (CVE-2015-4000)
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong|affected=All services providing an encrypted communication using weak
+  SSL/TLS cipher suites.|impact=This could allow remote attackers to obtain sensitive information
+  or have other, unspecified impacts.|solution=The configuration of this services should be changed so that it
+  does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.|vuldetect=Checks previous collected cipher suites.
+
+  NOTE: No severity for SMTP services with &apos;Opportunistic TLS&apos; and weak cipher suites on port 25/tcp
+  is reported. If too strong cipher suites are configured for this service the alternative would be
+  to fall back to an even more insecure cleartext communication.|solution_type=Mitigation</tags><solution type='Mitigation'>The configuration of this services should be changed so that it
+  does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.</solution><refs><ref type="cve" id="CVE-2013-2566"/><ref type="cve" id="CVE-2015-2808"/><ref type="cve" id="CVE-2015-4000"/><ref type="url" id="https://configurator.tlsref.org/"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-1.html"/><ref type="url" id="https://www.bsi.bund.de/EN/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.html"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_BSI_TLS_Version_2_4.html"/><ref type="url" id="https://web.archive.org/web/20240113175943/https://www.bettercrypto.org"/><ref type="url" id="https://www.enisa.europa.eu/publications/algorithms-key-size-and-parameters-report-2014"/><ref type="cert-bund" id="WID-SEC-2026-0180"/><ref type="cert-bund" id="CB-K21/0067"/><ref type="cert-bund" id="CB-K19/0812"/><ref type="cert-bund" id="CB-K17/1750"/><ref type="cert-bund" id="CB-K16/1593"/><ref type="cert-bund" id="CB-K16/1552"/><ref type="cert-bund" id="CB-K16/1102"/><ref type="cert-bund" id="CB-K16/0617"/><ref type="cert-bund" id="CB-K16/0599"/><ref type="cert-bund" id="CB-K16/0168"/><ref type="cert-bund" id="CB-K16/0121"/><ref type="cert-bund" id="CB-K16/0090"/><ref type="cert-bund" id="CB-K16/0030"/><ref type="cert-bund" id="CB-K15/1751"/><ref type="cert-bund" id="CB-K15/1591"/><ref type="cert-bund" id="CB-K15/1550"/><ref type="cert-bund" id="CB-K15/1517"/><ref type="cert-bund" id="CB-K15/1514"/><ref type="cert-bund" id="CB-K15/1464"/><ref type="cert-bund" id="CB-K15/1442"/><ref type="cert-bund" id="CB-K15/1334"/><ref type="cert-bund" id="CB-K15/1269"/><ref type="cert-bund" id="CB-K15/1136"/><ref type="cert-bund" id="CB-K15/1090"/><ref type="cert-bund" id="CB-K15/1059"/><ref type="cert-bund" id="CB-K15/1022"/><ref type="cert-bund" id="CB-K15/1015"/><ref type="cert-bund" id="CB-K15/0986"/><ref type="cert-bund" id="CB-K15/0964"/><ref type="cert-bund" id="CB-K15/0962"/><ref type="cert-bund" id="CB-K15/0932"/><ref type="cert-bund" id="CB-K15/0927"/><ref type="cert-bund" id="CB-K15/0926"/><ref type="cert-bund" id="CB-K15/0907"/><ref type="cert-bund" id="CB-K15/0901"/><ref type="cert-bund" id="CB-K15/0896"/><ref type="cert-bund" id="CB-K15/0889"/><ref type="cert-bund" id="CB-K15/0877"/><ref type="cert-bund" id="CB-K15/0850"/><ref type="cert-bund" id="CB-K15/0849"/><ref type="cert-bund" id="CB-K15/0834"/><ref type="cert-bund" id="CB-K15/0827"/><ref type="cert-bund" id="CB-K15/0802"/><ref type="cert-bund" id="CB-K15/0764"/><ref type="cert-bund" id="CB-K15/0733"/><ref type="cert-bund" id="CB-K15/0667"/><ref type="cert-bund" id="CB-K14/0935"/><ref type="cert-bund" id="CB-K13/0942"/><ref type="dfn-cert" id="DFN-CERT-2023-2939"/><ref type="dfn-cert" id="DFN-CERT-2021-0775"/><ref type="dfn-cert" id="DFN-CERT-2020-1561"/><ref type="dfn-cert" id="DFN-CERT-2020-1276"/><ref type="dfn-cert" id="DFN-CERT-2017-1821"/><ref type="dfn-cert" id="DFN-CERT-2016-1692"/><ref type="dfn-cert" id="DFN-CERT-2016-1648"/><ref type="dfn-cert" id="DFN-CERT-2016-1168"/><ref type="dfn-cert" id="DFN-CERT-2016-0665"/><ref type="dfn-cert" id="DFN-CERT-2016-0642"/><ref type="dfn-cert" id="DFN-CERT-2016-0184"/><ref type="dfn-cert" id="DFN-CERT-2016-0135"/><ref type="dfn-cert" id="DFN-CERT-2016-0101"/><ref type="dfn-cert" id="DFN-CERT-2016-0035"/><ref type="dfn-cert" id="DFN-CERT-2015-1853"/><ref type="dfn-cert" id="DFN-CERT-2015-1679"/><ref type="dfn-cert" id="DFN-CERT-2015-1632"/><ref type="dfn-cert" id="DFN-CERT-2015-1608"/><ref type="dfn-cert" id="DFN-CERT-2015-1542"/><ref type="dfn-cert" id="DFN-CERT-2015-1518"/><ref type="dfn-cert" id="DFN-CERT-2015-1406"/><ref type="dfn-cert" id="DFN-CERT-2015-1341"/><ref type="dfn-cert" id="DFN-CERT-2015-1194"/><ref type="dfn-cert" id="DFN-CERT-2015-1144"/><ref type="dfn-cert" id="DFN-CERT-2015-1113"/><ref type="dfn-cert" id="DFN-CERT-2015-1078"/><ref type="dfn-cert" id="DFN-CERT-2015-1067"/><ref type="dfn-cert" id="DFN-CERT-2015-1038"/><ref type="dfn-cert" id="DFN-CERT-2015-1016"/><ref type="dfn-cert" id="DFN-CERT-2015-1012"/><ref type="dfn-cert" id="DFN-CERT-2015-0980"/><ref type="dfn-cert" id="DFN-CERT-2015-0977"/><ref type="dfn-cert" id="DFN-CERT-2015-0976"/><ref type="dfn-cert" id="DFN-CERT-2015-0960"/><ref type="dfn-cert" id="DFN-CERT-2015-0956"/><ref type="dfn-cert" id="DFN-CERT-2015-0944"/><ref type="dfn-cert" id="DFN-CERT-2015-0937"/><ref type="dfn-cert" id="DFN-CERT-2015-0925"/><ref type="dfn-cert" id="DFN-CERT-2015-0884"/><ref type="dfn-cert" id="DFN-CERT-2015-0881"/><ref type="dfn-cert" id="DFN-CERT-2015-0879"/><ref type="dfn-cert" id="DFN-CERT-2015-0866"/><ref type="dfn-cert" id="DFN-CERT-2015-0844"/><ref type="dfn-cert" id="DFN-CERT-2015-0800"/><ref type="dfn-cert" id="DFN-CERT-2015-0737"/><ref type="dfn-cert" id="DFN-CERT-2015-0696"/><ref type="dfn-cert" id="DFN-CERT-2014-0977"/></refs></nvt><scan_nvt_version>2026-06-03T07:18:10Z</scan_nvt_version><threat>Medium</threat><severity>5.9</severity><qod><value>98</value><type></type></qod><description>&apos;Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+
+</description><original_threat>Medium</original_threat><original_severity>5.9</original_severity><compliance>undefined</compliance></result><result id="baec6e3c-8cec-4698-889a-10aec7b44d89"><name>SSL/TLS: Report Weak Cipher Suites</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103440"><type>nvt</type><name>SSL/TLS: Report Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>5.9</cvss_base><severities score="5.9"><severity type="cvss_base_v3"><origin>NVD</origin><date>2020-11-23T19:48:00Z</date><score>5.9</score><value>CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N</value></severity></severities><tags>cvss_base_vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N|summary=This routine reports all weak SSL/TLS cipher suites accepted by
+  a service.|insight=These rules are applied for the evaluation of the cryptographic
+  strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808)
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods and
+  therefore considered as weak (CVE-2015-4000)
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong|affected=All services providing an encrypted communication using weak
+  SSL/TLS cipher suites.|impact=This could allow remote attackers to obtain sensitive information
+  or have other, unspecified impacts.|solution=The configuration of this services should be changed so that it
+  does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.|vuldetect=Checks previous collected cipher suites.
+
+  NOTE: No severity for SMTP services with &apos;Opportunistic TLS&apos; and weak cipher suites on port 25/tcp
+  is reported. If too strong cipher suites are configured for this service the alternative would be
+  to fall back to an even more insecure cleartext communication.|solution_type=Mitigation</tags><solution type='Mitigation'>The configuration of this services should be changed so that it
+  does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.</solution><refs><ref type="cve" id="CVE-2013-2566"/><ref type="cve" id="CVE-2015-2808"/><ref type="cve" id="CVE-2015-4000"/><ref type="url" id="https://configurator.tlsref.org/"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-1.html"/><ref type="url" id="https://www.bsi.bund.de/EN/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.html"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_BSI_TLS_Version_2_4.html"/><ref type="url" id="https://web.archive.org/web/20240113175943/https://www.bettercrypto.org"/><ref type="url" id="https://www.enisa.europa.eu/publications/algorithms-key-size-and-parameters-report-2014"/><ref type="cert-bund" id="WID-SEC-2026-0180"/><ref type="cert-bund" id="CB-K21/0067"/><ref type="cert-bund" id="CB-K19/0812"/><ref type="cert-bund" id="CB-K17/1750"/><ref type="cert-bund" id="CB-K16/1593"/><ref type="cert-bund" id="CB-K16/1552"/><ref type="cert-bund" id="CB-K16/1102"/><ref type="cert-bund" id="CB-K16/0617"/><ref type="cert-bund" id="CB-K16/0599"/><ref type="cert-bund" id="CB-K16/0168"/><ref type="cert-bund" id="CB-K16/0121"/><ref type="cert-bund" id="CB-K16/0090"/><ref type="cert-bund" id="CB-K16/0030"/><ref type="cert-bund" id="CB-K15/1751"/><ref type="cert-bund" id="CB-K15/1591"/><ref type="cert-bund" id="CB-K15/1550"/><ref type="cert-bund" id="CB-K15/1517"/><ref type="cert-bund" id="CB-K15/1514"/><ref type="cert-bund" id="CB-K15/1464"/><ref type="cert-bund" id="CB-K15/1442"/><ref type="cert-bund" id="CB-K15/1334"/><ref type="cert-bund" id="CB-K15/1269"/><ref type="cert-bund" id="CB-K15/1136"/><ref type="cert-bund" id="CB-K15/1090"/><ref type="cert-bund" id="CB-K15/1059"/><ref type="cert-bund" id="CB-K15/1022"/><ref type="cert-bund" id="CB-K15/1015"/><ref type="cert-bund" id="CB-K15/0986"/><ref type="cert-bund" id="CB-K15/0964"/><ref type="cert-bund" id="CB-K15/0962"/><ref type="cert-bund" id="CB-K15/0932"/><ref type="cert-bund" id="CB-K15/0927"/><ref type="cert-bund" id="CB-K15/0926"/><ref type="cert-bund" id="CB-K15/0907"/><ref type="cert-bund" id="CB-K15/0901"/><ref type="cert-bund" id="CB-K15/0896"/><ref type="cert-bund" id="CB-K15/0889"/><ref type="cert-bund" id="CB-K15/0877"/><ref type="cert-bund" id="CB-K15/0850"/><ref type="cert-bund" id="CB-K15/0849"/><ref type="cert-bund" id="CB-K15/0834"/><ref type="cert-bund" id="CB-K15/0827"/><ref type="cert-bund" id="CB-K15/0802"/><ref type="cert-bund" id="CB-K15/0764"/><ref type="cert-bund" id="CB-K15/0733"/><ref type="cert-bund" id="CB-K15/0667"/><ref type="cert-bund" id="CB-K14/0935"/><ref type="cert-bund" id="CB-K13/0942"/><ref type="dfn-cert" id="DFN-CERT-2023-2939"/><ref type="dfn-cert" id="DFN-CERT-2021-0775"/><ref type="dfn-cert" id="DFN-CERT-2020-1561"/><ref type="dfn-cert" id="DFN-CERT-2020-1276"/><ref type="dfn-cert" id="DFN-CERT-2017-1821"/><ref type="dfn-cert" id="DFN-CERT-2016-1692"/><ref type="dfn-cert" id="DFN-CERT-2016-1648"/><ref type="dfn-cert" id="DFN-CERT-2016-1168"/><ref type="dfn-cert" id="DFN-CERT-2016-0665"/><ref type="dfn-cert" id="DFN-CERT-2016-0642"/><ref type="dfn-cert" id="DFN-CERT-2016-0184"/><ref type="dfn-cert" id="DFN-CERT-2016-0135"/><ref type="dfn-cert" id="DFN-CERT-2016-0101"/><ref type="dfn-cert" id="DFN-CERT-2016-0035"/><ref type="dfn-cert" id="DFN-CERT-2015-1853"/><ref type="dfn-cert" id="DFN-CERT-2015-1679"/><ref type="dfn-cert" id="DFN-CERT-2015-1632"/><ref type="dfn-cert" id="DFN-CERT-2015-1608"/><ref type="dfn-cert" id="DFN-CERT-2015-1542"/><ref type="dfn-cert" id="DFN-CERT-2015-1518"/><ref type="dfn-cert" id="DFN-CERT-2015-1406"/><ref type="dfn-cert" id="DFN-CERT-2015-1341"/><ref type="dfn-cert" id="DFN-CERT-2015-1194"/><ref type="dfn-cert" id="DFN-CERT-2015-1144"/><ref type="dfn-cert" id="DFN-CERT-2015-1113"/><ref type="dfn-cert" id="DFN-CERT-2015-1078"/><ref type="dfn-cert" id="DFN-CERT-2015-1067"/><ref type="dfn-cert" id="DFN-CERT-2015-1038"/><ref type="dfn-cert" id="DFN-CERT-2015-1016"/><ref type="dfn-cert" id="DFN-CERT-2015-1012"/><ref type="dfn-cert" id="DFN-CERT-2015-0980"/><ref type="dfn-cert" id="DFN-CERT-2015-0977"/><ref type="dfn-cert" id="DFN-CERT-2015-0976"/><ref type="dfn-cert" id="DFN-CERT-2015-0960"/><ref type="dfn-cert" id="DFN-CERT-2015-0956"/><ref type="dfn-cert" id="DFN-CERT-2015-0944"/><ref type="dfn-cert" id="DFN-CERT-2015-0937"/><ref type="dfn-cert" id="DFN-CERT-2015-0925"/><ref type="dfn-cert" id="DFN-CERT-2015-0884"/><ref type="dfn-cert" id="DFN-CERT-2015-0881"/><ref type="dfn-cert" id="DFN-CERT-2015-0879"/><ref type="dfn-cert" id="DFN-CERT-2015-0866"/><ref type="dfn-cert" id="DFN-CERT-2015-0844"/><ref type="dfn-cert" id="DFN-CERT-2015-0800"/><ref type="dfn-cert" id="DFN-CERT-2015-0737"/><ref type="dfn-cert" id="DFN-CERT-2015-0696"/><ref type="dfn-cert" id="DFN-CERT-2014-0977"/></refs></nvt><scan_nvt_version>2026-06-03T07:18:10Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>NOTE: No severity for SMTP services with &apos;Opportunistic TLS&apos; and weak cipher suites on port 25/tcp is reported. If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure cleartext communication.
+
+&apos;Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+&apos;Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="480d1b16-4691-4743-ae07-d8deef2015c9"><name>SSL/TLS: RSA Temporary Key Handling &apos;RSA_EXPORT&apos; Downgrade Issue (FREAK)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:12Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:12Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.805142"><type>nvt</type><name>SSL/TLS: RSA Temporary Key Handling &apos;RSA_EXPORT&apos; Downgrade Issue (FREAK)</name><family>SSL and TLS</family><cvss_base>4.3</cvss_base><severities score="4.3"><severity type="cvss_base_v2"><origin></origin><date>2015-03-06T11:12:13Z</date><score>4.3</score><value>AV:N/AC:M/Au:N/C:N/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:N/I:P/A:N|summary=This host is accepting &apos;RSA_EXPORT&apos; cipher suites and is prone
+  to a man-in-the-middle (MITM) vulnerability.|insight=Flaw is due to improper handling RSA temporary keys in a
+  non-export RSA key exchange cipher suite.|affected=- Hosts accepting &apos;RSA_EXPORT&apos; cipher suites.
+
+  - OpenSSL versions prior to 0.9.8zd, 1.0.0 prior to 1.0.0p and 1.0.1 prior to 1.0.1k.|impact=Successful exploitation will allow remote attacker to downgrade
+  the security of a session to use &apos;RSA_EXPORT&apos; cipher suites, which are significantly weaker than
+  non-export cipher suites. This may allow a man-in-the-middle attacker to more easily break the
+  encryption and monitor or tamper with the encrypted stream.|solution=- Remove support for &apos;RSA_EXPORT&apos; cipher suites from the
+  service. Please see the references for more resources supporting you with this task.
+
+  - If the service is using OpenSSL: Update to version 0.9.8zd, 1.0.0p, 1.0.1k or later.|vuldetect=Checks previous collected cipher suites.|solution_type=VendorFix</tags><solution type='VendorFix'>- Remove support for &apos;RSA_EXPORT&apos; cipher suites from the
+  service. Please see the references for more resources supporting you with this task.
+
+  - If the service is using OpenSSL: Update to version 0.9.8zd, 1.0.0p, 1.0.1k or later.</solution><refs><ref type="cve" id="CVE-2015-0204"/><ref type="url" id="https://freakattack.com"/><ref type="url" id="https://openssl-library.org/news/secadv/20150108.txt"/><ref type="url" id="https://web.archive.org/web/20210122095002/http://www.securityfocus.com/bid/71936"/><ref type="url" id="https://www.secpod.com/blog/freak-attack"/><ref type="url" id="https://blog.cryptographyengineering.com/2015/03/03/attack-of-week-freak-or-factoring-nsa"/><ref type="url" id="https://configurator.tlsref.org/"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-1.html"/><ref type="url" id="https://www.bsi.bund.de/EN/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.html"/><ref type="url" id="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_BSI_TLS_Version_2_4.html"/><ref type="url" id="https://web.archive.org/web/20240113175943/https://www.bettercrypto.org"/><ref type="url" id="https://www.enisa.europa.eu/publications/algorithms-key-size-and-parameters-report-2014"/><ref type="cert-bund" id="WID-SEC-2026-0180"/><ref type="cert-bund" id="CB-K18/0799"/><ref type="cert-bund" id="CB-K16/1289"/><ref type="cert-bund" id="CB-K16/1096"/><ref type="cert-bund" id="CB-K15/1751"/><ref type="cert-bund" id="CB-K15/1266"/><ref type="cert-bund" id="CB-K15/0850"/><ref type="cert-bund" id="CB-K15/0764"/><ref type="cert-bund" id="CB-K15/0720"/><ref type="cert-bund" id="CB-K15/0548"/><ref type="cert-bund" id="CB-K15/0526"/><ref type="cert-bund" id="CB-K15/0509"/><ref type="cert-bund" id="CB-K15/0493"/><ref type="cert-bund" id="CB-K15/0384"/><ref type="cert-bund" id="CB-K15/0365"/><ref type="cert-bund" id="CB-K15/0364"/><ref type="cert-bund" id="CB-K15/0302"/><ref type="cert-bund" id="CB-K15/0192"/><ref type="cert-bund" id="CB-K15/0016"/><ref type="dfn-cert" id="DFN-CERT-2018-1408"/><ref type="dfn-cert" id="DFN-CERT-2016-1372"/><ref type="dfn-cert" id="DFN-CERT-2016-1164"/><ref type="dfn-cert" id="DFN-CERT-2016-0388"/><ref type="dfn-cert" id="DFN-CERT-2015-1853"/><ref type="dfn-cert" id="DFN-CERT-2015-1332"/><ref type="dfn-cert" id="DFN-CERT-2015-0884"/><ref type="dfn-cert" id="DFN-CERT-2015-0800"/><ref type="dfn-cert" id="DFN-CERT-2015-0758"/><ref type="dfn-cert" id="DFN-CERT-2015-0567"/><ref type="dfn-cert" id="DFN-CERT-2015-0544"/><ref type="dfn-cert" id="DFN-CERT-2015-0530"/><ref type="dfn-cert" id="DFN-CERT-2015-0396"/><ref type="dfn-cert" id="DFN-CERT-2015-0375"/><ref type="dfn-cert" id="DFN-CERT-2015-0374"/><ref type="dfn-cert" id="DFN-CERT-2015-0305"/><ref type="dfn-cert" id="DFN-CERT-2015-0199"/><ref type="dfn-cert" id="DFN-CERT-2015-0021"/></refs></nvt><scan_nvt_version>2026-06-03T07:18:10Z</scan_nvt_version><threat>Medium</threat><severity>4.3</severity><qod><value>80</value><type></type></qod><description>&apos;RSA_EXPORT&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+
+&apos;RSA_EXPORT&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+
+
+</description><original_threat>Medium</original_threat><original_severity>4.3</original_severity><compliance>undefined</compliance></result><result id="c73f772c-4823-4434-a454-f30323720de7"><name>SSL/TLS: Safe/Secure Renegotiation Support Status</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:28Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:28Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.117757"><type>nvt</type><name>SSL/TLS: Safe/Secure Renegotiation Support Status</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2021-10-27T11:26:49Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks and reports if a remote SSL/TLS service supports
+  safe/secure renegotiation.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://www.gnutls.org/manual/html_node/Safe-renegotiation.html"/><ref type="url" id="https://wiki.openssl.org/index.php/TLS1.3#Renegotiation"/><ref type="url" id="https://datatracker.ietf.org/doc/html/rfc5746"/></refs></nvt><scan_nvt_version>2026-03-13T05:54:58Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type></type></qod><description>Protocol Version | Safe/Secure Renegotiation Support Status
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SSLv3            | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.0          | Enabled, Note: While the remote service announces the support of safe/secure renegotiation it still might not support / accept renegotiation at all.
+TLSv1.1          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.2          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.3          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=111 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>111</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="111" max="10"/><result_count>619<filtered>147</filtered><page>10</page></result_count></get_results_response>

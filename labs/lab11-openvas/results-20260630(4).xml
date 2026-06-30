@@ -1,0 +1,255 @@
+<get_results_response status="200" status_text="OK"><result id="a4c241c1-9253-467b-a664-5104c5a14bd8"><name>Obtain list of all port mapper registered programs via RPC</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:28:26Z</modification_time><comment></comment><creation_time>2026-06-30T21:28:26Z</creation_time><report id="b580cc9e-1162-43ff-b9d5-fe7a6d23688c"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>111/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.11111"><type>nvt</type><name>Obtain list of all port mapper registered programs via RPC</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2005-11-03T13:08:04Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script calls the DUMP RPC on the port mapper, to obtain the
+  list of all registered programs.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2023-09-08T05:06:21Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>These are the registered RPC programs:
+
+RPC program #100000 version 2 &apos;portmapper&apos; (portmap sunrpc rpcbind) on port 111/TCP
+
+RPC program #100003 version 2 &apos;nfs&apos; (nfsprog) on port 2049/TCP
+
+RPC program #100003 version 3 &apos;nfs&apos; (nfsprog) on port 2049/TCP
+
+RPC program #100003 version 4 &apos;nfs&apos; (nfsprog) on port 2049/TCP
+
+RPC program #100024 version 1 &apos;status&apos; on port 33790/TCP
+
+RPC program #100005 version 1 &apos;mountd&apos; (mount showmount) on port 57217/TCP
+
+RPC program #100005 version 2 &apos;mountd&apos; (mount showmount) on port 57217/TCP
+
+RPC program #100005 version 3 &apos;mountd&apos; (mount showmount) on port 57217/TCP
+
+RPC program #100021 version 1 &apos;nlockmgr&apos; on port 58568/TCP
+
+RPC program #100021 version 3 &apos;nlockmgr&apos; on port 58568/TCP
+
+RPC program #100021 version 4 &apos;nlockmgr&apos; on port 58568/TCP
+
+RPC program #100000 version 2 &apos;portmapper&apos; (portmap sunrpc rpcbind) on port 111/UDP
+
+RPC program #100003 version 2 &apos;nfs&apos; (nfsprog) on port 2049/UDP
+
+RPC program #100003 version 3 &apos;nfs&apos; (nfsprog) on port 2049/UDP
+
+RPC program #100003 version 4 &apos;nfs&apos; (nfsprog) on port 2049/UDP
+
+RPC program #100021 version 1 &apos;nlockmgr&apos; on port 40421/UDP
+
+RPC program #100021 version 3 &apos;nlockmgr&apos; on port 40421/UDP
+
+RPC program #100021 version 4 &apos;nlockmgr&apos; on port 40421/UDP
+
+RPC program #100005 version 1 &apos;mountd&apos; (mount showmount) on port 46965/UDP
+
+RPC program #100005 version 2 &apos;mountd&apos; (mount showmount) on port 46965/UDP
+
+RPC program #100005 version 3 &apos;mountd&apos; (mount showmount) on port 46965/UDP
+
+RPC program #100024 version 1 &apos;status&apos; on port 53059/UDP
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="191c8209-ca3c-491a-a453-75fc93400fe2"><name>OpenSSH Detection Consolidation</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:42:38Z</modification_time><comment></comment><creation_time>2026-06-30T21:42:38Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108577"><type>nvt</type><name>OpenSSH Detection Consolidation</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2019-05-16T12:08:23Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Consolidation of OpenSSH detections.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://www.openssh.com/"/></refs></nvt><scan_nvt_version>2024-12-13T05:05:32Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected OpenSSH Server
+
+Version:       4.7p1
+Location:      22/tcp
+CPE:           cpe:/a:openbsd:openssh:4.7p1
+
+Concluded from version/product identification result:
+SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="15902ec7-128b-4935-a8f5-1ad2a20c5fe1"><name>Operating System (OS) End of Life (EOL) Detection</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:55:26Z</modification_time><comment></comment><creation_time>2026-06-30T21:55:26Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103674"><type>nvt</type><name>Operating System (OS) End of Life (EOL) Detection</name><family>General</family><cvss_base>10.0</cvss_base><severities score="10.0"><severity type="cvss_base_v2"><origin></origin><date>2013-03-05T17:11:24Z</date><score>10.0</score><value>AV:N/AC:L/Au:N/C:C/I:C/A:C</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:C/I:C/A:C|summary=The Operating System (OS) on the remote host has reached the end
+  of life (EOL) and should not be used anymore.|insight=|affected=|impact=An EOL version of an OS is not receiving any security updates
+  from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to compromise
+  the security of this host.|solution=Update the OS on the remote host to a version which is still
+  supported and receiving security updates by the vendor.
+
+  Note / Important: Please create an override for this result if the target host is a:
+
+  - Windows system with Extended Security Updates (ESU)
+
+  - System with additional 3rd-party / non-vendor security updates like e.g. from &apos;TuxCare&apos;,
+  &apos;Freexian Extended LTS&apos; or similar|vuldetect=Checks if an EOL version of an OS is present on the target
+  host.|solution_type=Mitigation</tags><solution type='Mitigation'>Update the OS on the remote host to a version which is still
+  supported and receiving security updates by the vendor.
+
+  Note / Important: Please create an override for this result if the target host is a:
+
+  - Windows system with Extended Security Updates (ESU)
+
+  - System with additional 3rd-party / non-vendor security updates like e.g. from &apos;TuxCare&apos;,
+  &apos;Freexian Extended LTS&apos; or similar</solution></nvt><scan_nvt_version>2025-05-21T05:40:19Z</scan_nvt_version><threat>Critical</threat><severity>10.0</severity><qod><value>80</value><type></type></qod><description>The &quot;Ubuntu&quot; Operating System on the remote host has reached the end of life.
+
+CPE:               cpe:/o:canonical:ubuntu_linux:8.04
+Installed version,
+build or SP:       8.04
+EOL date:          2013-05-09
+EOL info:          https://documentation.ubuntu.com/project/release-team/list-of-releases/
+</description><original_threat>Critical</original_threat><original_severity>10</original_severity><compliance>undefined</compliance></result><result id="1ea89fc6-cf64-493a-aec0-391a0be2441b"><name>OS Detection Consolidation and Reporting</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:55:21Z</modification_time><comment></comment><creation_time>2026-06-30T21:55:21Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105937"><type>nvt</type><name>OS Detection Consolidation and Reporting</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2016-02-19T10:19:54Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://forum.greenbone.net/c/vulnerability-tests/7"/></refs></nvt><scan_nvt_version>2026-06-26T16:19:55Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Best matching OS:
+
+OS:           Ubuntu 8.04
+Version:      8.04
+CPE:          cpe:/o:canonical:ubuntu_linux:8.04
+Found by VT:  1.3.6.1.4.1.25623.1.0.105586 (Operating System (OS) Detection (SSH Banner))
+Concluded from SSH banner on port 22/tcp: SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1
+Setting key &quot;Host/runs_unixoide&quot; based on this information
+
+Other OS detections (in order of reliability):
+
+OS:           Debian GNU/Linux
+CPE:          cpe:/o:debian:debian_linux
+Found by VT:  1.3.6.1.4.1.25623.1.0.105355 (Operating System (OS) Detection (FTP))
+Concluded from FTP banner on port 2121/tcp: 220 ProFTPD 1.3.1 Server (Debian) [::ffff:192.168.40.3]
+
+OS:           Debian GNU/Linux
+CPE:          cpe:/o:debian:debian_linux
+Found by VT:  1.3.6.1.4.1.25623.1.0.102011 (SMB NativeLanMan)
+Concluded from SMB/Samba banner on port 445/tcp: 
+OS String:  Unix
+SMB String: Samba 3.0.20-Debian
+
+OS:           Ubuntu 8.04
+Version:      8.04
+CPE:          cpe:/o:canonical:ubuntu_linux:8.04
+Found by VT:  1.3.6.1.4.1.25623.1.0.111067 (Operating System (OS) Detection (HTTP))
+Concluded from PHP Server banner on port 80/tcp: X-Powered-By: PHP/5.2.4-2ubuntu5.10
+
+OS:           Ubuntu 8.04
+Version:      8.04
+CPE:          cpe:/o:canonical:ubuntu_linux:8.04
+Found by VT:  1.3.6.1.4.1.25623.1.0.111067 (Operating System (OS) Detection (HTTP))
+Concluded from HTTP Server banner on port 80/tcp: Server: Apache/2.2.8 (Ubuntu) DAV/2
+
+OS:           Ubuntu
+CPE:          cpe:/o:canonical:ubuntu_linux
+Found by VT:  1.3.6.1.4.1.25623.1.0.111068 (Operating System (OS) Detection (SMTP/POP3/IMAP))
+Concluded from SMTP banner on port 25/tcp: 220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+
+OS:           Ubuntu
+CPE:          cpe:/o:canonical:ubuntu_linux
+Found by VT:  1.3.6.1.4.1.25623.1.0.108192 (Operating System (OS) Detection (MySQL/MariaDB))
+Concluded from MySQL/MariaDB server banner on port 3306/tcp: 5.0.51a-3ubuntu5
+
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="30d6f154-1793-409d-8c2e-2861d25ad21c"><name>OS Detection Consolidation and Reporting</name><owner><name>admin</name></owner><modification_time>2026-06-30T01:10:42Z</modification_time><comment></comment><creation_time>2026-06-30T01:10:42Z</creation_time><report id="63ba50a5-e162-4111-b511-1010406a0002"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id="bba1da79-6f71-46f5-b413-007603512d3e"/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105937"><type>nvt</type><name>OS Detection Consolidation and Reporting</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2016-02-19T10:19:54Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://forum.greenbone.net/c/vulnerability-tests/7"/></refs></nvt><scan_nvt_version>2026-06-26T16:19:55Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Best matching OS:
+
+OS:           Linux Kernel
+CPE:          cpe:/o:linux:kernel
+Found by VT:  1.3.6.1.4.1.25623.1.0.102002 (Operating System (OS) Detection (ICMP))
+Concluded from ICMP based OS fingerprint
+Setting key &quot;Host/runs_unixoide&quot; based on this information
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="cf5df1eb-84e9-46f4-93d9-086a7239c51b"><name>PHP &lt; 5.3.13, 5.4.x &lt; 5.4.3 Multiple Vulnerabilities - Active Check</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:04:00Z</modification_time><comment></comment><creation_time>2026-06-30T22:04:00Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103482"><type>nvt</type><name>PHP &lt; 5.3.13, 5.4.x &lt; 5.4.3 Multiple Vulnerabilities - Active Check</name><family>Web application abuses</family><cvss_base>7.5</cvss_base><severities score="7.5"><severity type="cvss_base_v2"><origin></origin><date>2012-05-04T09:40:34Z</date><score>7.5</score><value>AV:N/AC:L/Au:N/C:P/I:P/A:P</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:P/I:P/A:P|summary=PHP is prone to multiple vulnerabilities.|insight=When PHP is used in a CGI-based setup (such as Apache&apos;s
+  mod_cgid), the php-cgi receives a processed query string parameter as command line arguments which
+  allows command-line switches, such as -s, -d or -c to be passed to the php-cgi binary, which can
+  be exploited to disclose source code and obtain arbitrary code execution.
+
+  An example of the -s command, allowing an attacker to view the source code of index.php is below:
+
+  http://example.com/index.php?-s|affected=PHP versions prior to 5.3.13 and 5.4.x prior to 5.4.3.
+
+  Other products / applications might be affected by the tested CVE-2012-1823 as well.|impact=Exploiting this issue allows remote attackers to view the source
+  code of files in the context of the server process. This may allow the attacker to obtain
+  sensitive information and to run arbitrary PHP code on the affected computer. Other attacks are
+  also possible.|solution=PHP: Update to version 5.3.13, 5.4.3 or later
+
+  - Other products / applications: Please contact the vendor for a solution|vuldetect=Send multiple a crafted HTTP POST requests and checks the
+  responses.
+
+  Notes:
+
+  - This script checks for the presence of CVE-2012-1823 which indicates that the system is also
+  affected by the other included CVEs.
+
+  - It is currently expected that a result of this VT is reported if the system is generally
+  exposing a phpinfo() output on the relevant URL / endpoint (independent from the running product).
+  Exposing such sensitive information is generally seen as a security misconfiguration and should be
+  avoided.|solution_type=VendorFix</tags><solution type='VendorFix'>PHP: Update to version 5.3.13, 5.4.3 or later
+
+  - Other products / applications: Please contact the vendor for a solution</solution><refs><ref type="cve" id="CVE-2012-1823"/><ref type="cve" id="CVE-2012-2311"/><ref type="cve" id="CVE-2012-2336"/><ref type="cve" id="CVE-2012-2335"/><ref type="url" id="https://web.archive.org/web/20190212080415/http://eindbazen.net/2012/05/php-cgi-advisory-cve-2012-1823/"/><ref type="url" id="https://www.kb.cert.org/vuls/id/520827"/><ref type="url" id="https://bugs.php.net/bug.php?id=61910"/><ref type="url" id="https://www.php.net/manual/en/security.cgi-bin.php"/><ref type="url" id="https://web.archive.org/web/20210121223743/http://www.securityfocus.com/bid/53388"/><ref type="url" id="https://web.archive.org/web/20120709064615/http://www.h-online.com/open/news/item/Critical-open-hole-in-PHP-creates-risks-Update-2-1567532.html"/><ref type="url" id="https://www.cisa.gov/known-exploited-vulnerabilities-catalog"/><ref type="cisa" id="Known Exploited Vulnerability (KEV) catalog"/><ref type="dfn-cert" id="DFN-CERT-2013-1494"/><ref type="dfn-cert" id="DFN-CERT-2012-1316"/><ref type="dfn-cert" id="DFN-CERT-2012-1276"/><ref type="dfn-cert" id="DFN-CERT-2012-1268"/><ref type="dfn-cert" id="DFN-CERT-2012-1267"/><ref type="dfn-cert" id="DFN-CERT-2012-1266"/><ref type="dfn-cert" id="DFN-CERT-2012-1173"/><ref type="dfn-cert" id="DFN-CERT-2012-1101"/><ref type="dfn-cert" id="DFN-CERT-2012-0994"/><ref type="dfn-cert" id="DFN-CERT-2012-0993"/><ref type="dfn-cert" id="DFN-CERT-2012-0992"/><ref type="dfn-cert" id="DFN-CERT-2012-0920"/><ref type="dfn-cert" id="DFN-CERT-2012-0915"/><ref type="dfn-cert" id="DFN-CERT-2012-0914"/><ref type="dfn-cert" id="DFN-CERT-2012-0913"/><ref type="dfn-cert" id="DFN-CERT-2012-0907"/><ref type="dfn-cert" id="DFN-CERT-2012-0906"/><ref type="dfn-cert" id="DFN-CERT-2012-0900"/><ref type="dfn-cert" id="DFN-CERT-2012-0880"/><ref type="dfn-cert" id="DFN-CERT-2012-0878"/></refs></nvt><scan_nvt_version>2026-04-23T06:21:05Z</scan_nvt_version><threat>High</threat><severity>7.5</severity><qod><value>95</value><type></type></qod><description>By doing the following HTTP POST request:
+
+&quot;HTTP POST&quot; body : &lt;?php phpinfo();?&gt;
+URL              : http://192.168.40.3/cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E
+
+it was possible to execute the &quot;&lt;?php phpinfo();?&gt;&quot; command.
+
+Result:
+  &lt;title&gt;phpinfo()&lt;/title&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW,NOARCHIVE&quot; /&gt;&lt;/head&gt;
+  &lt;tr&gt;&lt;td class=&quot;e&quot;&gt;Configuration File (php.ini) Path &lt;/td&gt;&lt;td class=&quot;v&quot;&gt;/etc/php5/cgi &lt;/td&gt;&lt;/tr&gt;
+  &lt;h2&gt;PHP Core&lt;/h2&gt;
+  &lt;h2&gt;PHP Variables&lt;/h2&gt;
+</description><original_threat>High</original_threat><original_severity>7.5</original_severity><compliance>undefined</compliance></result><result id="4b2a56bd-238c-4d0a-b815-2c7092bdec22"><name>PHP Detection Consolidation</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:55:21Z</modification_time><comment></comment><creation_time>2026-06-30T21:55:21Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.171722"><type>nvt</type><name>PHP Detection Consolidation</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2025-09-19T12:38:33Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Consolidation of PHP detections.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://www.php.net/"/></refs></nvt><scan_nvt_version>2025-09-24T05:39:03Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected PHP
+
+Version:       5.2.4
+Location:      80/tcp
+CPE:           cpe:/a:php:php:5.2.4
+
+Concluded from version/product identification result:
+X-Powered-By: PHP/5.2.4-2ubuntu5.10
+
+Concluded from version/product identification location:
+http://192.168.40.3/
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="e228136c-fbfe-482f-8622-06fd4f0ac86d"><name>phpinfo() Output Reporting (HTTP)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:03Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:03Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.11229"><type>nvt</type><name>phpinfo() Output Reporting (HTTP)</name><family>Web application abuses</family><cvss_base>5.3</cvss_base><severities score="5.3"><severity type="cvss_base_v3"><origin>NVD</origin><date>2023-12-12T13:24:00Z</date><score>5.3</score><value>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</value></severity></severities><tags>cvss_base_vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N|summary=Reporting of files containing the output of the phpinfo() PHP
+  function previously detected via HTTP.|insight=Many PHP installation tutorials instruct the user to create a
+  file called phpinfo.php or similar containing the phpinfo() statement. Such a file is often left
+  back in the webserver directory.|affected=All systems exposing a file containing the output of the
+  phpinfo() PHP function.
+
+  This VT is also reporting if an affected endpoint for the following products have been identified:
+
+  - CVE-2008-0149: TUTOS
+
+  - CVE-2023-49282, CVE-2023-49283: Microsoft Graph PHP SDK
+
+  - CVE-2024-10486: Google for WooCommerce plugin for WordPress|impact=Some of the information that can be gathered from this file
+  includes:
+
+  The username of the user running the PHP process, if it is a sudo user, the IP address of the
+  host, the web server version, the system version (Unix, Linux, Windows, ...), and the root
+  directory of the web server.|solution=Delete the listed files or restrict access to them.|vuldetect=This script reports files identified by the following separate
+  VT: &apos;phpinfo() Output Detection (HTTP)&apos; (OID: 1.3.6.1.4.1.25623.1.0.108474).|solution_type=Workaround</tags><solution type='Workaround'>Delete the listed files or restrict access to them.</solution><refs><ref type="cve" id="CVE-2008-0149"/><ref type="cve" id="CVE-2023-49282"/><ref type="cve" id="CVE-2023-49283"/><ref type="cve" id="CVE-2024-10486"/><ref type="url" id="https://www.php.net/manual/en/function.phpinfo.php"/><ref type="url" id="https://beaglesecurity.com/blog/vulnerability/revealing-phpinfo.html"/></refs></nvt><scan_nvt_version>2025-07-09T05:43:50Z</scan_nvt_version><threat>Medium</threat><severity>5.3</severity><qod><value>80</value><type></type></qod><description>The following files are calling the function phpinfo() which disclose potentially sensitive information:
+
+http://192.168.40.3/mutillidae/phpinfo.php
+Concluded from:
+  &lt;title&gt;phpinfo()&lt;/title&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW,NOARCHIVE&quot; /&gt;&lt;/head&gt;
+  &lt;tr&gt;&lt;td class=&quot;e&quot;&gt;Configuration File (php.ini) Path &lt;/td&gt;&lt;td class=&quot;v&quot;&gt;/etc/php5/cgi &lt;/td&gt;&lt;/tr&gt;
+  &lt;h2&gt;PHP Core&lt;/h2&gt;
+  &lt;h2&gt;PHP Variables&lt;/h2&gt;
+
+http://192.168.40.3/phpinfo.php
+Concluded from:
+  &lt;title&gt;phpinfo()&lt;/title&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW,NOARCHIVE&quot; /&gt;&lt;/head&gt;
+  &lt;tr&gt;&lt;td class=&quot;e&quot;&gt;Configuration File (php.ini) Path &lt;/td&gt;&lt;td class=&quot;v&quot;&gt;/etc/php5/cgi &lt;/td&gt;&lt;/tr&gt;
+  &lt;h2&gt;PHP Core&lt;/h2&gt;
+  &lt;h2&gt;PHP Variables&lt;/h2&gt;
+</description><original_threat>Medium</original_threat><original_severity>5.3</original_severity><compliance>undefined</compliance></result><result id="a03185cd-74b2-4129-aa0f-b1f9d0ea2e5e"><name>phpMyAdmin Detection (HTTP)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:55:26Z</modification_time><comment></comment><creation_time>2026-06-30T21:55:26Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.900129"><type>nvt</type><name>phpMyAdmin Detection (HTTP)</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2008-10-03T13:12:54Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=HTTP based detection of phpMyAdmin.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-05-07T06:32:13Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected phpMyAdmin
+
+Version:       3.1.1
+Location:      /phpMyAdmin
+CPE:           cpe:/a:phpmyadmin:phpmyadmin:3.1.1
+
+Concluded from version/product identification result:
+Version 3.1.1
+
+Concluded from version/product identification location:
+  http://192.168.40.3/phpMyAdmin/index.php
+  http://192.168.40.3/phpMyAdmin/README
+
+Extra information:
+- Protected by Username/Password
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="e010fa39-7001-40a0-b0f8-a432ee7cf91b"><name>phpMyAdmin &apos;error.php&apos; Cross Site Scripting Vulnerability</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:04:10Z</modification_time><comment></comment><creation_time>2026-06-30T22:04:10Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.801660"><type>nvt</type><name>phpMyAdmin &apos;error.php&apos; Cross Site Scripting Vulnerability</name><family>Web application abuses</family><cvss_base>4.3</cvss_base><severities score="4.3"><severity type="cvss_base_v2"><origin></origin><date>2010-12-13T14:28:53Z</date><score>4.3</score><value>AV:N/AC:M/Au:N/C:N/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:N/I:P/A:N|summary=phpMyAdmin is prone to a cross-site scripting (XSS) vulnerability.|insight=The flaw is caused by input validation errors in the &apos;error.php&apos;
+script when processing crafted BBcode tags containing &apos;@&apos; characters, which
+could allow attackers to inject arbitrary HTML code within the error page
+and conduct phishing attacks.|affected=phpMyAdmin version 3.3.8.1 and prior.|impact=Successful exploitation will allow attackers to inject arbitrary
+HTML code within the error page and conduct phishing attacks.|solution=No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the product by another one.|vuldetect=|solution_type=WillNotFix</tags><solution type='WillNotFix'>No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the product by another one.</solution><refs><ref type="cve" id="CVE-2010-4480"/><ref type="url" id="http://www.exploit-db.com/exploits/15699/"/><ref type="url" id="http://www.vupen.com/english/advisories/2010/3133"/><ref type="dfn-cert" id="DFN-CERT-2011-0467"/><ref type="dfn-cert" id="DFN-CERT-2011-0451"/><ref type="dfn-cert" id="DFN-CERT-2011-0016"/><ref type="dfn-cert" id="DFN-CERT-2011-0002"/></refs></nvt><scan_nvt_version>2023-10-17T05:05:34Z</scan_nvt_version><threat>Medium</threat><severity>4.3</severity><qod><value>99</value><type></type></qod><description></description><original_threat>Medium</original_threat><original_severity>4.3</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=41 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>41</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="41" max="10"/><result_count>619<filtered>147</filtered><page>10</page></result_count></get_results_response>

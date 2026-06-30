@@ -1,0 +1,133 @@
+<get_results_response status="200" status_text="OK"><result id="7492d37a-2386-435a-93ce-edc6bc24c1bd"><name>ISC BIND Detection Consolidation</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:42:38Z</modification_time><comment></comment><creation_time>2026-06-30T21:42:38Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.145294"><type>nvt</type><name>ISC BIND Detection Consolidation</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2021-02-02T04:14:12Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Consolidation of ISC BIND detections.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://www.isc.org/bind/"/></refs></nvt><scan_nvt_version>2025-10-31T05:40:56Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected ISC BIND
+
+Version:       9.4.2
+Location:      53/tcp
+CPE:           cpe:/a:isc:bind:9.4.2
+
+Concluded from version/product identification result:
+9.4.2
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="46b7be33-9247-434c-a4a3-916d638c6800"><name>Java RMI Server Insecure Default Configuration RCE Vulnerability - Active Check</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:59Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:59Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>1099/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.140051"><type>nvt</type><name>Java RMI Server Insecure Default Configuration RCE Vulnerability - Active Check</name><family>Gain a shell remotely</family><cvss_base>7.5</cvss_base><severities score="7.5"><severity type="cvss_base_v2"><origin></origin><date>2016-11-04T13:34:52Z</date><score>7.5</score><value>AV:N/AC:L/Au:N/C:P/I:P/A:P</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:P/I:P/A:P|summary=Multiple Java products that implement the RMI Server contain a
+  vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary code
+  (remote code execution/RCE) on a targeted system with elevated privileges.|insight=The vulnerability exists because of an incorrect default
+  configuration of the Remote Method Invocation (RMI) Server in the affected software.|affected=|impact=An unauthenticated, remote attacker could exploit the
+  vulnerability by transmitting crafted packets to the affected software. When the packets are
+  processed, the attacker could execute arbitrary code on the system with elevated privileges.|solution=Disable class-loading. Please contact the vendor of the
+  affected system for additional guidance.|vuldetect=Sends a crafted JRMI request and checks if the target is
+  connecting back to the scanner host.
+
+  Note: For a successful detection of this flaw the target host needs to be able to reach the
+  scanner host on a TCP port randomly generated during the runtime of the VT (currently in the
+  range of 10000-32000).|solution_type=Workaround</tags><solution type='Workaround'>Disable class-loading. Please contact the vendor of the
+  affected system for additional guidance.</solution><refs><ref type="cve" id="CVE-2011-3556"/><ref type="url" id="https://web.archive.org/web/20211208040855/http://www.securitytracker.com/id?1026215"/><ref type="url" id="https://web.archive.org/web/20110824060234/http://download.oracle.com/javase/1.3/docs/guide/rmi/spec/rmi-protocol.html"/><ref type="url" id="https://tools.cisco.com/security/center/viewAlert.x?alertId=23665"/><ref type="dfn-cert" id="DFN-CERT-2012-1829"/><ref type="dfn-cert" id="DFN-CERT-2012-1380"/><ref type="dfn-cert" id="DFN-CERT-2012-1377"/><ref type="dfn-cert" id="DFN-CERT-2012-1156"/><ref type="dfn-cert" id="DFN-CERT-2012-1155"/><ref type="dfn-cert" id="DFN-CERT-2012-0956"/><ref type="dfn-cert" id="DFN-CERT-2012-0828"/><ref type="dfn-cert" id="DFN-CERT-2012-0815"/><ref type="dfn-cert" id="DFN-CERT-2012-0638"/><ref type="dfn-cert" id="DFN-CERT-2012-0451"/><ref type="dfn-cert" id="DFN-CERT-2012-0418"/><ref type="dfn-cert" id="DFN-CERT-2012-0354"/><ref type="dfn-cert" id="DFN-CERT-2012-0146"/><ref type="dfn-cert" id="DFN-CERT-2012-0142"/><ref type="dfn-cert" id="DFN-CERT-2012-0126"/><ref type="dfn-cert" id="DFN-CERT-2012-0095"/><ref type="dfn-cert" id="DFN-CERT-2012-0047"/><ref type="dfn-cert" id="DFN-CERT-2011-1844"/><ref type="dfn-cert" id="DFN-CERT-2011-1826"/><ref type="dfn-cert" id="DFN-CERT-2011-1804"/><ref type="dfn-cert" id="DFN-CERT-2011-1743"/><ref type="dfn-cert" id="DFN-CERT-2011-1738"/><ref type="dfn-cert" id="DFN-CERT-2011-1706"/><ref type="dfn-cert" id="DFN-CERT-2011-1628"/><ref type="dfn-cert" id="DFN-CERT-2011-1627"/><ref type="dfn-cert" id="DFN-CERT-2011-1619"/></refs></nvt><scan_nvt_version>2026-04-17T15:51:27Z</scan_nvt_version><threat>High</threat><severity>7.5</severity><qod><value>95</value><type></type></qod><description>By doing an RMI request it was possible to trigger the vulnerability and make the remote host send a request back to the scanner host (Details on the received packet follows).
+
+Destination IP:   192.168.40.7 (receiving IP on scanner host side)
+Destination port: 12721/tcp (receiving port on scanner host side)
+Originating IP:   192.168.40.3 (originating IP from target host side)
+</description><original_threat>High</original_threat><original_severity>7.5</original_severity><compliance>undefined</compliance></result><result id="d265b2dd-0053-4b05-8170-c91e181c7c5e"><name>jQuery &lt; 1.6.3 XSS Vulnerability</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:53Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:53Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.141637"><type>nvt</type><name>jQuery &lt; 1.6.3 XSS Vulnerability</name><family>Web application abuses</family><cvss_base>4.3</cvss_base><severities score="4.3"><severity type="cvss_base_v2"><origin></origin><date>2018-11-01T09:18:55Z</date><score>4.3</score><value>AV:N/AC:M/Au:N/C:N/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:N/I:P/A:N|summary=jQuery is prone to a cross-site scripting (XSS)
+  vulnerability.|insight=Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3,
+  when using location.hash to select elements, allows remote attackers to inject arbitrary web
+  script or HTML via a crafted tag.|affected=jQuery prior to version 1.6.3.|impact=|solution=Update to version 1.6.3 or later.|vuldetect=Checks if a vulnerable version is present on the target host.|solution_type=VendorFix</tags><solution type='VendorFix'>Update to version 1.6.3 or later.</solution><refs><ref type="cve" id="CVE-2011-4969"/><ref type="url" id="https://blog.jquery.com/2011/09/01/jquery-1-6-3-released/"/><ref type="cert-bund" id="WID-SEC-2026-1752"/><ref type="cert-bund" id="CB-K17/0195"/><ref type="dfn-cert" id="DFN-CERT-2017-0199"/><ref type="dfn-cert" id="DFN-CERT-2016-0890"/></refs></nvt><scan_nvt_version>2023-07-14T05:06:08Z</scan_nvt_version><threat>Medium</threat><severity>4.3</severity><qod><value>80</value><type></type></qod><description>Installed version: 1.3.2
+Fixed version:     1.6.3
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu/jquery.min.js
+
+Detection info (see OID: 1.3.6.1.4.1.25623.1.0.150658 for more info):
+- Identified file: http://192.168.40.3/mutillidae/javascript/ddsmoothmenu/jquery.min.js
+- Referenced at:   http://192.168.40.3/mutillidae/
+</description><original_threat>Medium</original_threat><original_severity>4.3</original_severity><compliance>undefined</compliance></result><result id="de49420a-5b41-4e99-a4e7-211e607c9476"><name>jQuery &lt; 1.9.0 XSS Vulnerability</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:53Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:53Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.141636"><type>nvt</type><name>jQuery &lt; 1.9.0 XSS Vulnerability</name><family>Web application abuses</family><cvss_base>6.1</cvss_base><severities score="6.1"><severity type="cvss_base_v3"><origin>NVD</origin><date>2021-03-25T16:15:00Z</date><score>6.1</score><value>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N</value></severity></severities><tags>cvss_base_vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N|summary=jQuery is prone to a cross-site scripting (XSS)
+  vulnerability.|insight=The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the &apos;&lt;&apos; character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the &apos;&lt;&apos; character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.|affected=jQuery prior to version 1.9.0.|impact=|solution=Update to version 1.9.0 or later.|vuldetect=Checks if a vulnerable version is present on the target host.|solution_type=VendorFix</tags><solution type='VendorFix'>Update to version 1.9.0 or later.</solution><refs><ref type="cve" id="CVE-2012-6708"/><ref type="url" id="https://bugs.jquery.com/ticket/11290"/><ref type="cert-bund" id="WID-SEC-2026-1752"/><ref type="cert-bund" id="WID-SEC-2022-0673"/><ref type="cert-bund" id="CB-K22/0045"/><ref type="cert-bund" id="CB-K18/1131"/><ref type="dfn-cert" id="DFN-CERT-2025-1803"/><ref type="dfn-cert" id="DFN-CERT-2023-1197"/><ref type="dfn-cert" id="DFN-CERT-2020-0590"/></refs></nvt><scan_nvt_version>2023-07-14T05:06:08Z</scan_nvt_version><threat>Medium</threat><severity>6.1</severity><qod><value>80</value><type></type></qod><description>Installed version: 1.3.2
+Fixed version:     1.9.0
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu/jquery.min.js
+
+Detection info (see OID: 1.3.6.1.4.1.25623.1.0.150658 for more info):
+- Identified file: http://192.168.40.3/mutillidae/javascript/ddsmoothmenu/jquery.min.js
+- Referenced at:   http://192.168.40.3/mutillidae/
+</description><original_threat>Medium</original_threat><original_severity>6.1</original_severity><compliance>undefined</compliance></result><result id="db945ca9-b685-4147-92aa-83446a987612"><name>jQuery Detection Consolidation</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:53Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:53Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.150658"><type>nvt</type><name>jQuery Detection Consolidation</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2021-06-03T14:04:05Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Consolidation of jQuery detections.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://jquery.com/"/></refs></nvt><scan_nvt_version>2023-07-14T05:06:08Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected jQuery
+
+Version:       1.3.2
+Location:      /mutillidae/javascript/ddsmoothmenu/jquery.min.js
+CPE:           cpe:/a:jquery:jquery:1.3.2
+
+Concluded from version/product identification result:
+src=&quot;./javascript/ddsmoothmenu/jquery.min.js
+jQuery JavaScript Library v1.3.2
+
+Concluded from version/product identification location:
+- Identified file: http://192.168.40.3/mutillidae/javascript/ddsmoothmenu/jquery.min.js
+- Referenced at:   http://192.168.40.3/mutillidae/
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="9cdd5d4c-47bc-4faf-9c45-195d800f8d24"><name>MariaDB / Oracle MySQL Detection (MySQL Protocol)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:41:23Z</modification_time><comment></comment><creation_time>2026-06-30T21:41:23Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>3306/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.100152"><type>nvt</type><name>MariaDB / Oracle MySQL Detection (MySQL Protocol)</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-04-23T19:21:19Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=MySQL protocol-based detection of MariaDB / Oracle MySQL.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2025-09-09T05:38:49Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected Oracle MySQL
+
+Version:       5.0.51a-3ubuntu5
+Location:      3306/tcp
+CPE:           cpe:/a:oracle:mysql:5.0.51a
+
+Concluded from version/product identification result:
+5.0.51a-3ubuntu5
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="3353bb09-4d7f-4bed-b462-89d4e2162bd2"><name>Microsoft SMB Signing Disabled</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:29Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:29Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.802726"><type>nvt</type><name>Microsoft SMB Signing Disabled</name><family>Windows</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2012-04-09T13:26:54Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks if SMB Signing is disabled at the remote SMB server.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-04-28T06:28:06Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>SMB Signing is disabled at the server.
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="61c4a7a5-656a-4d9a-832b-78f3765e91e5"><name>Microsoft Windows SMB Accessible Shares</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:34Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:34Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.902425"><type>nvt</type><name>Microsoft Windows SMB Accessible Shares</name><family>Windows</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2012-02-29T06:38:36Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The script detects the Windows SMB Accessible Shares and sets the
+  result into KB.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-03-18T05:59:10Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>The following shares were found
+IPC$
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="f2ae31ad-f553-4bc4-81ae-e123b5fd7dce"><name>Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:02:29Z</modification_time><comment></comment><creation_time>2026-06-30T22:02:29Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103935"><type>nvt</type><name>Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</name><family>SMTP problems</family><cvss_base>6.8</cvss_base><severities score="6.8"><severity type="cvss_base_v2"><origin></origin><date>2014-04-08T11:52:07Z</date><score>6.8</score><value>AV:N/AC:M/Au:N/C:P/I:P/A:P</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:P/I:P/A:P|summary=Multiple vendors&apos; implementations of &apos;STARTTLS&apos; are prone to a
+  vulnerability that lets attackers inject arbitrary commands.|insight=|affected=The following vendors are known to be affected:
+
+  Ipswitch
+
+  Kerio
+
+  Postfix
+
+  Qmail-TLS
+
+  Oracle
+
+  SCO Group
+
+  spamdyke
+
+  ISC|impact=An attacker can exploit this issue to execute arbitrary commands
+  in the context of the user running the application. Successful exploits can allow attackers to
+  obtain email usernames and passwords.|solution=Updates are available. Please see the references for more
+  information.|vuldetect=Send a special crafted &apos;STARTTLS&apos; request and check the
+  response.|solution_type=VendorFix</tags><solution type='VendorFix'>Updates are available. Please see the references for more
+  information.</solution><refs><ref type="cve" id="CVE-2011-0411"/><ref type="cve" id="CVE-2011-1430"/><ref type="cve" id="CVE-2011-1431"/><ref type="cve" id="CVE-2011-1432"/><ref type="cve" id="CVE-2011-1506"/><ref type="cve" id="CVE-2011-1575"/><ref type="cve" id="CVE-2011-1926"/><ref type="cve" id="CVE-2011-2165"/><ref type="url" id="http://www.securityfocus.com/bid/46767"/><ref type="url" id="http://kolab.org/pipermail/kolab-announce/2011/000101.html"/><ref type="url" id="http://bugzilla.cyrusimap.org/show_bug.cgi?id=3424"/><ref type="url" id="http://cyrusimap.org/mediawiki/index.php/Bugs_Resolved_in_2.4.7"/><ref type="url" id="http://www.kb.cert.org/vuls/id/MAPG-8D9M4P"/><ref type="url" id="http://files.kolab.org/server/release/kolab-server-2.3.2/sources/release-notes.txt"/><ref type="url" id="http://www.postfix.org/CVE-2011-0411.html"/><ref type="url" id="http://www.pureftpd.org/project/pure-ftpd/news"/><ref type="url" id="http://www.watchguard.com/support/release-notes/xcs/9/en-US/EN_ReleaseNotes_XCS_9_1_1/EN_ReleaseNotes_WG_XCS_9_1_TLS_Hotfix.pdf"/><ref type="url" id="http://www.spamdyke.org/documentation/Changelog.txt"/><ref type="url" id="http://datatracker.ietf.org/doc/draft-josefsson-kerberos5-starttls/?include_text=1"/><ref type="url" id="http://www.securityfocus.com/archive/1/516901"/><ref type="url" id="http://support.avaya.com/css/P8/documents/100134676"/><ref type="url" id="http://support.avaya.com/css/P8/documents/100141041"/><ref type="url" id="http://www.oracle.com/technetwork/topics/security/cpuapr2011-301950.html"/><ref type="url" id="http://inoa.net/qmail-tls/vu555316.patch"/><ref type="url" id="http://www.kb.cert.org/vuls/id/555316"/><ref type="cert-bund" id="CB-K15/1514"/><ref type="dfn-cert" id="DFN-CERT-2011-0917"/><ref type="dfn-cert" id="DFN-CERT-2011-0912"/><ref type="dfn-cert" id="DFN-CERT-2011-0897"/><ref type="dfn-cert" id="DFN-CERT-2011-0844"/><ref type="dfn-cert" id="DFN-CERT-2011-0818"/><ref type="dfn-cert" id="DFN-CERT-2011-0808"/><ref type="dfn-cert" id="DFN-CERT-2011-0771"/><ref type="dfn-cert" id="DFN-CERT-2011-0741"/><ref type="dfn-cert" id="DFN-CERT-2011-0712"/><ref type="dfn-cert" id="DFN-CERT-2011-0673"/><ref type="dfn-cert" id="DFN-CERT-2011-0597"/><ref type="dfn-cert" id="DFN-CERT-2011-0596"/><ref type="dfn-cert" id="DFN-CERT-2011-0519"/><ref type="dfn-cert" id="DFN-CERT-2011-0516"/><ref type="dfn-cert" id="DFN-CERT-2011-0483"/><ref type="dfn-cert" id="DFN-CERT-2011-0434"/><ref type="dfn-cert" id="DFN-CERT-2011-0393"/><ref type="dfn-cert" id="DFN-CERT-2011-0381"/></refs></nvt><scan_nvt_version>2023-10-31T05:06:37Z</scan_nvt_version><threat>Medium</threat><severity>6.8</severity><qod><value>99</value><type></type></qod><description></description><original_threat>Medium</original_threat><original_severity>6.8</original_severity><compliance>undefined</compliance></result><result id="f3f516b0-ae96-4e4d-979f-1a089f1843a1"><name>MySQL / MariaDB Default Credentials (MySQL Protocol)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:54Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:54Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>3306/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103551"><type>nvt</type><name>MySQL / MariaDB Default Credentials (MySQL Protocol)</name><family>Default Accounts</family><cvss_base>9.8</cvss_base><severities score="9.8"><severity type="cvss_base_v3"><origin>NVD</origin><date>2024-02-07T17:37:28Z</date><score>9.8</score><value>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</value></severity></severities><tags>cvss_base_vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H|summary=It was possible to login into the remote MySQL using default
+  credentials.|insight=|affected=The following products are know to use such weak credentials:
+
+  - CVE-2001-0645: Symantec/AXENT NetProwler 3.5.x
+
+  - CVE-2002-1809: Windows binary release of MySQL 3.23.2 through 3.23.52
+
+  - CVE-2004-1532: AppServ 2.5.x and earlier
+
+  - CVE-2004-2357: Proofpoint Protection Server
+
+  - CVE-2006-1451: MySQL Manager in Apple Mac OS X 10.3.9 and 10.4.6
+
+  - CVE-2007-2554: Associated Press (AP) Newspower 4.0.1 and earlier
+
+  - CVE-2007-6081: AdventNet EventLog Analyzer build 4030
+
+  - CVE-2009-0919: XAMPP
+
+  - CVE-2014-3419: Infoblox NetMRI before 6.8.5
+
+  - CVE-2015-4669: Xsuite 2.x
+
+  - CVE-2016-6531, CVE-2018-15719: Open Dental before version 18.4
+
+  - CVE-2024-22901: Vinchin Backup &amp; Recovery 7.2 and prior
+
+  - No CVE / GHSA-g38h-mr9p-fjmf: Vvveb CMS 1.0.8 and prior
+
+  Other products might be affected as well.|impact=|solution=- Change the password as soon as possible
+
+  - Contact the vendor for other possible fixes / updates|vuldetect=|solution_type=Mitigation</tags><solution type='Mitigation'>- Change the password as soon as possible
+
+  - Contact the vendor for other possible fixes / updates</solution><refs><ref type="cve" id="CVE-2001-0645"/><ref type="cve" id="CVE-2002-1809"/><ref type="cve" id="CVE-2004-1532"/><ref type="cve" id="CVE-2004-2357"/><ref type="cve" id="CVE-2006-1451"/><ref type="cve" id="CVE-2007-2554"/><ref type="cve" id="CVE-2007-6081"/><ref type="cve" id="CVE-2009-0919"/><ref type="cve" id="CVE-2014-3419"/><ref type="cve" id="CVE-2015-4669"/><ref type="cve" id="CVE-2016-6531"/><ref type="cve" id="CVE-2018-15719"/><ref type="cve" id="CVE-2024-22901"/></refs></nvt><scan_nvt_version>2026-05-27T08:10:51Z</scan_nvt_version><threat>Critical</threat><severity>9.8</severity><qod><value>95</value><type></type></qod><description>It was possible to login as user &quot;root&quot; with an empty password.
+</description><original_threat>Critical</original_threat><original_severity>9.8</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=31 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>31</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="31" max="10"/><result_count>619<filtered>147</filtered><page>10</page></result_count></get_results_response>

@@ -1,0 +1,141 @@
+<get_results_response status="200" status_text="OK"><result id="84cc6b1c-9aab-4efe-8922-7d35b651e327"><name>DistCC Detection</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:56:47Z</modification_time><comment></comment><creation_time>2026-06-30T21:56:47Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>3632/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.12638"><type>nvt</type><name>DistCC Detection</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2005-11-03T13:08:04Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Tries to detect if the remote host is running a DistCC service.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2023-08-01T13:29:10Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>95</value><type></type></qod><description>A DistCC service is running at this port.
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="2346a581-5035-419d-b2a9-5cb1216e98d1"><name>DistCC RCE Vulnerability (CVE-2004-2687)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:54Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:54Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>3632/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103553"><type>nvt</type><name>DistCC RCE Vulnerability (CVE-2004-2687)</name><family>Gain a shell remotely</family><cvss_base>9.3</cvss_base><severities score="9.3"><severity type="cvss_base_v2"><origin></origin><date>2012-08-23T14:02:21Z</date><score>9.3</score><value>AV:N/AC:M/Au:N/C:C/I:C/A:C</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:C/I:C/A:C|summary=DistCC is prone to a remote code execution (RCE)
+  vulnerability.|insight=DistCC 2.x, as used in XCode 1.5 and others, when not configured
+  to restrict access to the server port, allows remote attackers to execute arbitrary commands via
+  compilation jobs, which are executed by the server without authorization checks.|affected=|impact=DistCC by default trusts its clients completely that in turn
+  could allow a malicious client to execute arbitrary commands on the server.|solution=Vendor updates are available. Please see the references for
+  more information.
+
+  For more information about DistCC&apos;s security see the references.|vuldetect=|solution_type=VendorFix</tags><solution type='VendorFix'>Vendor updates are available. Please see the references for
+  more information.
+
+  For more information about DistCC&apos;s security see the references.</solution><refs><ref type="cve" id="CVE-2004-2687"/><ref type="url" id="https://distcc.github.io/security.html"/><ref type="url" id="https://web.archive.org/web/20150511045306/http://archives.neohapsis.com:80/archives/bugtraq/2005-03/0183.html"/><ref type="dfn-cert" id="DFN-CERT-2019-0381"/></refs></nvt><scan_nvt_version>2022-07-07T10:16:06Z</scan_nvt_version><threat>Critical</threat><severity>9.3</severity><qod><value>99</value><type></type></qod><description>It was possible to execute the &quot;id&quot; command.
+
+Result: uid=1(daemon) gid=1(daemon)
+</description><original_threat>Critical</original_threat><original_severity>9.3</original_severity><compliance>undefined</compliance></result><result id="2fe68de1-35c8-43b9-9946-ee64f5816902"><name>Distributed Ruby (dRuby/DRb) Multiple RCE Vulnerabilities</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:59Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:59Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>8787/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108010"><type>nvt</type><name>Distributed Ruby (dRuby/DRb) Multiple RCE Vulnerabilities</name><family>Gain a shell remotely</family><cvss_base>10.0</cvss_base><severities score="10.0"><severity type="cvss_base_v2"><origin></origin><date>2016-10-28T09:47:00Z</date><score>10.0</score><value>AV:N/AC:L/Au:N/C:C/I:C/A:C</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:C/I:C/A:C|summary=Systems using Distributed Ruby (dRuby/DRb), which is available in Ruby versions 1.6
+  and later, may permit unauthorized systems to execute distributed commands.|insight=|affected=|impact=By default, Distributed Ruby does not impose restrictions on allowed hosts or set the
+  $SAFE environment variable to prevent privileged activities. If other controls are not in place, especially if the
+  Distributed Ruby process runs with elevated privileges, an attacker could execute arbitrary system commands or Ruby
+  scripts on the Distributed Ruby server. An attacker may need to know only the URI of the listening Distributed Ruby
+  server to submit Ruby commands.|solution=Administrators of environments that rely on Distributed Ruby should ensure that
+  appropriate controls are in place. Code-level controls may include:
+
+  - Implementing taint on untrusted input
+
+  - Setting $SAFE levels appropriately (&gt;=2 is recommended if untrusted hosts are allowed to submit Ruby commands, and &gt;=3 may be appropriate)
+
+  - Including drb/acl.rb to set ACLEntry to restrict access to trusted hosts|vuldetect=Send a crafted command to the service and check for a remote command execution
+  via the instance_eval or syscall requests.|solution_type=Mitigation</tags><solution type='Mitigation'>Administrators of environments that rely on Distributed Ruby should ensure that
+  appropriate controls are in place. Code-level controls may include:
+
+  - Implementing taint on untrusted input
+
+  - Setting $SAFE levels appropriately (&gt;=2 is recommended if untrusted hosts are allowed to submit Ruby commands, and &gt;=3 may be appropriate)
+
+  - Including drb/acl.rb to set ACLEntry to restrict access to trusted hosts</solution><refs><ref type="url" id="https://tools.cisco.com/security/center/viewAlert.x?alertId=22750"/><ref type="url" id="http://www.securityfocus.com/bid/47071"/><ref type="url" id="http://blog.recurity-labs.com/archives/2011/05/12/druby_for_penetration_testers/"/><ref type="url" id="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/drb/rdoc/DRb.html"/></refs></nvt><scan_nvt_version>2024-06-28T05:05:33Z</scan_nvt_version><threat>Critical</threat><severity>10.0</severity><qod><value>99</value><type></type></qod><description>The service is running in $SAFE &gt;= 1 mode. However it is still possible to run arbitrary syscall commands on the remote host. Sending an invalid syscall the service returned the following response:
+
+Flo:Errno::ENOSYS:bt[&quot;3/usr/lib/ruby/1.8/drb/drb.rb:1555:in `syscall&apos;&quot;0/usr/lib/ruby/1.8/drb/drb.rb:1555:in `send&apos;&quot;4/usr/lib/ruby/1.8/drb/drb.rb:1555:in `__send__&apos;&quot;A/usr/lib/ruby/1.8/drb/drb.rb:1555:in `perform_without_block&apos;&quot;3/usr/lib/ruby/1.8/drb/drb.rb:1515:in `perform&apos;&quot;5/usr/lib/ruby/1.8/drb/drb.rb:1589:in `main_loop&apos;&quot;0/usr/lib/ruby/1.8/drb/drb.rb:1585:in `loop&apos;&quot;5/usr/lib/ruby/1.8/drb/drb.rb:1585:in `main_loop&apos;&quot;1/usr/lib/ruby/1.8/drb/drb.rb:1581:in `start&apos;&quot;5/usr/lib/ruby/1.8/drb/drb.rb:1581:in `main_loop&apos;&quot;//usr/lib/ruby/1.8/drb/drb.rb:1430:in `run&apos;&quot;1/usr/lib/ruby/1.8/drb/drb.rb:1427:in `start&apos;&quot;//usr/lib/ruby/1.8/drb/drb.rb:1427:in `run&apos;&quot;6/usr/lib/ruby/1.8/drb/drb.rb:1347:in `initialize&apos;&quot;//usr/lib/ruby/1.8/drb/drb.rb:1627:in `new&apos;&quot;9/usr/lib/ruby/1.8/drb/drb.rb:1627:in `start_service&apos;&quot;%/usr/sbin/druby_timeserver.rb:12:errnoi+:mesg&quot;Function not implemented
+</description><original_threat>Critical</original_threat><original_severity>10</original_severity><compliance>undefined</compliance></result><result id="334f4476-6775-4477-8514-d88380766a5d"><name>DNS Server Detection (TCP)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:41:53Z</modification_time><comment></comment><creation_time>2026-06-30T21:41:53Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>53/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108018"><type>nvt</type><name>DNS Server Detection (TCP)</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-03-22T16:08:49Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=TCP based detection of a DNS server.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2025-12-12T15:41:28Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>The remote DNS server banner is:
+
+9.4.2
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="a940b7cf-4b31-435d-b358-5242523e2313"><name>/doc directory browsable</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:43Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:43Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.10056"><type>nvt</type><name>/doc directory browsable</name><family>Web application abuses</family><cvss_base>5.0</cvss_base><severities score="5.0"><severity type="cvss_base_v2"><origin></origin><date>2005-11-03T13:08:04Z</date><score>5.0</score><value>AV:N/AC:L/Au:N/C:P/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:P/I:N/A:N|summary=The /doc directory is browsable.
+  /doc shows the content of the /usr/doc directory and therefore it shows which programs and - important! - the version of the installed programs.|insight=|affected=|impact=|solution=Use access restrictions for the /doc directory.
+  If you use Apache you might use this in your access.conf:
+
+  &lt;Directory /usr/doc&gt;
+  AllowOverride None
+  order deny, allow
+  deny from all
+  allow from localhost
+  &lt;/Directory&gt;|vuldetect=|solution_type=Mitigation</tags><solution type='Mitigation'>Use access restrictions for the /doc directory.
+  If you use Apache you might use this in your access.conf:
+
+  &lt;Directory /usr/doc&gt;
+  AllowOverride None
+  order deny, allow
+  deny from all
+  allow from localhost
+  &lt;/Directory&gt;</solution><refs><ref type="cve" id="CVE-1999-0678"/><ref type="url" id="http://www.securityfocus.com/bid/318"/></refs></nvt><scan_nvt_version>2023-08-01T13:29:10Z</scan_nvt_version><threat>Medium</threat><severity>5.0</severity><qod><value>80</value><type></type></qod><description>Vulnerable URL: http://192.168.40.3/doc/
+</description><original_threat>Medium</original_threat><original_severity>5</original_severity><compliance>undefined</compliance></result><result id="eda19d78-9a9e-4020-a6a7-5fa11bb3552f"><name>EasyPHP Webserver &lt;= 12.1 Multiple Vulnerabilities - Active Check</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:29Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:29Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.803189"><type>nvt</type><name>EasyPHP Webserver &lt;= 12.1 Multiple Vulnerabilities - Active Check</name><family>Web Servers</family><cvss_base>7.5</cvss_base><severities score="7.5"><severity type="cvss_base_v2"><origin></origin><date>2013-04-09T05:59:34Z</date><score>7.5</score><value>AV:N/AC:L/Au:N/C:P/I:P/A:P</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:P/I:P/A:P|summary=EasyPHP Webserver is prone to multiple vulnerabilities.|insight=The bug in EasyPHP WebServer Manager, its skipping
+  authentication for certain requests. Which allows to bypass the authentication, disclose the
+  information or execute a remote PHP code.|affected=EasyPHP version 12.1 and prior.|impact=Successful exploitation will allow attackers to gain
+  administrative access, disclose the information, inject PHP code/shell and execute a remote PHP
+  Code.|solution=No known solution was made available for at least one year
+  since the disclosure of this vulnerability. Likely none will be provided anymore. General solution
+  options are to upgrade to a newer release, disable respective features, remove the product or
+  replace the product by another one.|vuldetect=Sends a crafted HTTP GET request and checks the response.
+
+  Note: It is currently expected that a result of this VT is reported if the system is generally
+  exposing a phpinfo() output on the relevant URL / endpoint (independent from the running product).
+  Exposing such sensitive information is generally seen as a security misconfiguration and should be
+  avoided.|solution_type=WillNotFix</tags><solution type='WillNotFix'>No known solution was made available for at least one year
+  since the disclosure of this vulnerability. Likely none will be provided anymore. General solution
+  options are to upgrade to a newer release, disable respective features, remove the product or
+  replace the product by another one.</solution><refs><ref type="url" id="https://cxsecurity.com/issue/WLB-2013040069"/></refs></nvt><scan_nvt_version>2025-11-11T05:40:18Z</scan_nvt_version><threat>High</threat><severity>7.5</severity><qod><value>99</value><type></type></qod><description>Vulnerable URL: http://192.168.40.3/phpinfo.php
+Concluded from:
+  &lt;title&gt;phpinfo()&lt;/title&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW,NOARCHIVE&quot; /&gt;&lt;/head&gt;
+  &lt;tr&gt;&lt;td class=&quot;e&quot;&gt;Configuration File (php.ini) Path &lt;/td&gt;&lt;td class=&quot;v&quot;&gt;/etc/php5/cgi &lt;/td&gt;&lt;/tr&gt;
+  &lt;h2&gt;PHP Core&lt;/h2&gt;
+  &lt;h2&gt;PHP Variables&lt;/h2&gt;
+</description><original_threat>High</original_threat><original_severity>7.5</original_severity><compliance>undefined</compliance></result><result id="dd26e590-9e8f-490c-a6fa-dfb94b6102d4"><name>&apos;favicon.ico&apos; Based Fingerprinting (HTTP)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:43Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:43Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.20108"><type>nvt</type><name>&apos;favicon.ico&apos; Based Fingerprinting (HTTP)</name><family>Web application abuses</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2006-03-26T15:55:15Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=HTTP based fingerprinting of web applications based on an
+  exposed &apos;favicon.ico&apos; file.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2023-08-01T13:29:10Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>The following apps/services were identified:
+
+&quot;phpmyadmin (2.11.8.1 - 4.2.x)&quot; fingerprinted by the file: &quot;http://192.168.40.3/phpMyAdmin/favicon.ico&quot;
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="799baa37-1cc9-4622-84bf-02ba6e341e9a"><name>FTP Banner Detection</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:41:38Z</modification_time><comment></comment><creation_time>2026-06-30T21:41:38Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>2121/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.10092"><type>nvt</type><name>FTP Banner Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2005-11-03T13:08:04Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script detects and reports a FTP Server Banner.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-04-28T06:28:06Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Remote FTP server banner:
+
+220 ProFTPD 1.3.1 Server (Debian) [::ffff:192.168.40.3]
+
+This is probably (a):
+
+- ProFTPD
+
+Server operating system information collected via &quot;SYST&quot; command:
+
+215 UNIX Type: L8
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="e09bc187-93dc-4072-8b25-68213a1dc231"><name>FTP Brute Force Logins With Default Credentials Reporting</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:54Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:54Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>2121/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108718"><type>nvt</type><name>FTP Brute Force Logins With Default Credentials Reporting</name><family>Brute force attacks</family><cvss_base>7.5</cvss_base><severities score="7.5"><severity type="cvss_base_v2"><origin></origin><date>2020-03-05T14:02:28Z</date><score>7.5</score><value>AV:N/AC:L/Au:N/C:P/I:P/A:P</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:P/I:P/A:P|summary=It was possible to login into the remote FTP server using
+  weak/known credentials.|insight=The following devices are / software is known to be affected:
+
+  - CVE-2001-1594: Codonics printer FTP service as used in GE Healthcare eNTEGRA P&amp;R
+
+  - CVE-2013-7404: GE Healthcare Discovery NM 750b
+
+  - CVE-2014-9198: Schneider Electric ETG3000 FactoryCast HMI gateways
+
+  - CVE-2015-7261: QNAP iArtist Lite distributed with QNAP Signage Station
+
+  - CVE-2016-8731: Foscam C1 devices
+
+  - CVE-2017-8218: vsftpd on TP-Link C2 and C20i devices
+
+  - CVE-2018-9068: IMM2 for IBM and Lenovo System x
+
+  - CVE-2018-17771: Ingenico Telium 2 PoS terminals
+
+  - CVE-2018-19063, CVE-2018-19064: Foscam C2 and Opticam i5 devices
+
+  - CVE-2018-25147: Microhard Systems IPn4G
+
+  - CVE-2020-36915: Adtec Digital SignEdje Digital Signage Player
+
+  Note: As the VT &apos;FTP Brute Force Logins With Default Credentials&apos; (OID:
+  1.3.6.1.4.1.25623.1.0.108717) might run into a timeout the actual reporting of this vulnerability
+  takes place in this VT instead.|affected=|impact=This issue may be exploited by a remote attacker to e.g. gain
+  access to sensitive information or modify system configuration.|solution=Change the password as soon as possible.|vuldetect=Reports weak/known credentials detected by the VT
+  &apos;FTP Brute Force Logins With Default Credentials&apos; (OID: 1.3.6.1.4.1.25623.1.0.108717).|solution_type=Mitigation</tags><solution type='Mitigation'>Change the password as soon as possible.</solution><refs><ref type="cve" id="CVE-1999-0501"/><ref type="cve" id="CVE-1999-0502"/><ref type="cve" id="CVE-1999-0507"/><ref type="cve" id="CVE-1999-0508"/><ref type="cve" id="CVE-2001-1594"/><ref type="cve" id="CVE-2013-7404"/><ref type="cve" id="CVE-2014-9198"/><ref type="cve" id="CVE-2015-7261"/><ref type="cve" id="CVE-2016-8731"/><ref type="cve" id="CVE-2017-8218"/><ref type="cve" id="CVE-2018-9068"/><ref type="cve" id="CVE-2018-17771"/><ref type="cve" id="CVE-2018-19063"/><ref type="cve" id="CVE-2018-19064"/><ref type="cve" id="CVE-2018-25147"/><ref type="cve" id="CVE-2020-36915"/></refs></nvt><scan_nvt_version>2026-01-16T15:42:49Z</scan_nvt_version><threat>High</threat><severity>7.5</severity><qod><value>95</value><type></type></qod><description>It was possible to login with the following credentials &lt;User&gt;:&lt;Password&gt;
+
+msfadmin:msfadmin
+postgres:postgres
+service:service
+user:user
+</description><original_threat>High</original_threat><original_severity>7.5</original_severity><compliance>undefined</compliance></result><result id="dfbe5a82-e1e4-42c5-b25f-e00f4b4358ca"><name>FTP Unencrypted Cleartext Login</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:54:05Z</modification_time><comment></comment><creation_time>2026-06-30T21:54:05Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>2121/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108528"><type>nvt</type><name>FTP Unencrypted Cleartext Login</name><family>General</family><cvss_base>4.8</cvss_base><severities score="4.8"><severity type="cvss_base_v2"><origin></origin><date>2019-01-09T10:31:09Z</date><score>4.8</score><value>AV:A/AC:L/Au:N/C:P/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:A/AC:L/Au:N/C:P/I:P/A:N|summary=The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.|insight=|affected=|impact=An attacker can uncover login names and passwords by sniffing traffic to the
+  FTP service.|solution=Enable FTPS or enforce the connection via the &apos;AUTH TLS&apos; command. Please see
+  the manual of the FTP service for more information.|vuldetect=Tries to login to a non FTPS enabled FTP service without sending a
+  &apos;AUTH TLS&apos; command first and checks if the service is accepting the login without enforcing the use of
+  the &apos;AUTH TLS&apos; command.|solution_type=Mitigation</tags><solution type='Mitigation'>Enable FTPS or enforce the connection via the &apos;AUTH TLS&apos; command. Please see
+  the manual of the FTP service for more information.</solution></nvt><scan_nvt_version>2023-12-20T05:05:58Z</scan_nvt_version><threat>Medium</threat><severity>4.8</severity><qod><value>70</value><type></type></qod><description>The remote FTP service accepts logins without a previous sent &apos;AUTH TLS&apos; command. Response(s):
+
+Non-anonymous sessions: 331 Password required for openvasvt
+Anonymous sessions:     331 Password required for anonymous
+</description><original_threat>Medium</original_threat><original_severity>4.8</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=11 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>11</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="11" max="10"/><result_count>619<filtered>147</filtered><page>10</page></result_count></get_results_response>

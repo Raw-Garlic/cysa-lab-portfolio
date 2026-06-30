@@ -1,0 +1,364 @@
+<get_results_response status="200" status_text="OK"><result id="a14a0f33-8ca6-47bf-aa56-ecfe4fa5d8a6"><name>VNC Server Unencrypted Data Transmission</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:55:06Z</modification_time><comment></comment><creation_time>2026-06-30T21:55:06Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5900/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108529"><type>nvt</type><name>VNC Server Unencrypted Data Transmission</name><family>General</family><cvss_base>4.8</cvss_base><severities score="4.8"><severity type="cvss_base_v2"><origin></origin><date>2019-01-10T08:23:25Z</date><score>4.8</score><value>AV:A/AC:L/Au:N/C:P/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:A/AC:L/Au:N/C:P/I:P/A:N|summary=The remote host is running a VNC server providing one or more insecure or
+  cryptographically weak Security Type(s) not intended for use on untrusted networks.|insight=|affected=|impact=An attacker can uncover sensitive data by sniffing traffic to the
+  VNC server.|solution=Run the session over an encrypted channel provided by IPsec [RFC4301] or SSH [RFC4254].
+  Some VNC server vendors are also providing more secure Security Types within their products.|vuldetect=|solution_type=Mitigation</tags><solution type='Mitigation'>Run the session over an encrypted channel provided by IPsec [RFC4301] or SSH [RFC4254].
+  Some VNC server vendors are also providing more secure Security Types within their products.</solution><refs><ref type="url" id="https://tools.ietf.org/html/rfc6143#page-10"/></refs></nvt><scan_nvt_version>2023-07-12T05:05:04Z</scan_nvt_version><threat>Medium</threat><severity>4.8</severity><qod><value>70</value><type></type></qod><description>The VNC server provides the following insecure or cryptographically weak Security Type(s):
+
+2 (VNC authentication)
+</description><original_threat>Medium</original_threat><original_severity>4.8</original_severity><compliance>undefined</compliance></result><result id="c64cbed6-ef83-49b6-937a-1a1239046363"><name>VNC Supported &apos;security types&apos; Detection (TCP)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:55:06Z</modification_time><comment></comment><creation_time>2026-06-30T21:55:06Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5900/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.19288"><type>nvt</type><name>VNC Supported &apos;security types&apos; Detection (TCP)</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2006-03-26T15:55:15Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=TCP based detection of the available remote Virtual Network
+  Computing (VNC) &apos;security types&apos;.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://datatracker.ietf.org/doc/html/rfc6143"/><ref type="url" id="https://datatracker.ietf.org/doc/html/rfc7869"/></refs></nvt><scan_nvt_version>2025-03-19T05:38:35Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>95</value><type></type></qod><description>The remote VNC server chose security type #2 (VNC authentication)
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="95a390ae-c256-4e5b-ab2b-8484512014ad"><name>Weak Encryption Algorithm(s) Supported (SSH)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:23Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:23Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105611"><type>nvt</type><name>Weak Encryption Algorithm(s) Supported (SSH)</name><family>SSL and TLS</family><cvss_base>4.3</cvss_base><severities score="4.3"><severity type="cvss_base_v2"><origin></origin><date>2016-04-19T10:49:32Z</date><score>4.3</score><value>AV:N/AC:M/Au:N/C:P/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:P/I:N/A:N|summary=The remote SSH server is configured to allow / support weak
+  encryption algorithm(s).|insight=- The &apos;arcfour&apos; cipher is the Arcfour stream cipher with 128-bit
+  keys. The Arcfour cipher is believed to be compatible with the RC4 cipher [SCHNEIER]. Arcfour
+  (and RC4) has problems with weak keys, and should not be used anymore.
+
+  - The &apos;none&apos; algorithm specifies that no encryption is to be done. Note that this method provides
+  no confidentiality protection, and it is NOT RECOMMENDED to use it.
+
+  - A vulnerability exists in SSH messages that employ CBC mode that may allow an attacker to
+  recover plaintext from a block of ciphertext.|affected=|impact=|solution=Disable the reported weak encryption algorithm(s).|vuldetect=Checks the supported encryption algorithms (client-to-server
+  and server-to-client) of the remote SSH server.
+
+  Currently weak encryption algorithms are defined as the following:
+
+  - Arcfour (RC4) cipher based algorithms
+
+  - &apos;none&apos; algorithm
+
+  - CBC mode cipher based algorithms|solution_type=Mitigation</tags><solution type='Mitigation'>Disable the reported weak encryption algorithm(s).</solution><refs><ref type="url" id="https://www.rfc-editor.org/rfc/rfc8758"/><ref type="url" id="https://www.kb.cert.org/vuls/id/958563"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc4253#section-6.3"/></refs></nvt><scan_nvt_version>2024-06-14T05:05:48Z</scan_nvt_version><threat>Medium</threat><severity>4.3</severity><qod><value>80</value><type></type></qod><description>The remote SSH server supports the following weak client-to-server encryption algorithm(s):
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se
+
+
+The remote SSH server supports the following weak server-to-client encryption algorithm(s):
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se
+</description><original_threat>Medium</original_threat><original_severity>4.3</original_severity><compliance>undefined</compliance></result><result id="25890b0b-57bc-4f11-866f-ef7bbed58c97"><name>Weak Host Key Algorithm(s) (SSH)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:23Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:23Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.117687"><type>nvt</type><name>Weak Host Key Algorithm(s) (SSH)</name><family>SSL and TLS</family><cvss_base>5.3</cvss_base><severities score="5.3"><severity type="cvss_base_v3"><origin>Greenbone</origin><date>2021-11-23T10:58:59Z</date><score>5.3</score><value>CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N</value></severity></severities><tags>cvss_base_vector=CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N|summary=The remote SSH server is configured to allow / support weak host
+  key algorithm(s).|insight=|affected=|impact=|solution=Disable the reported weak host key algorithm(s).|vuldetect=Checks the supported host key algorithms of the remote SSH
+  server.
+
+  Currently weak host key algorithms are defined as the following:
+
+  - ssh-dss: Digital Signature Algorithm (DSA) / Digital Signature Standard (DSS)|solution_type=Mitigation</tags><solution type='Mitigation'>Disable the reported weak host key algorithm(s).</solution><refs><ref type="url" id="https://www.rfc-editor.org/rfc/rfc8332"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc8709"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc4253#section-6.6"/></refs></nvt><scan_nvt_version>2024-06-14T05:05:48Z</scan_nvt_version><threat>Medium</threat><severity>5.3</severity><qod><value>80</value><type></type></qod><description>The remote SSH server supports the following weak host key algorithm(s):
+
+host key algorithm | Description
+-----------------------------------------------------------------------------------------
+ssh-dss            | Digital Signature Algorithm (DSA) / Digital Signature Standard (DSS)
+</description><original_threat>Medium</original_threat><original_severity>5.3</original_severity><compliance>undefined</compliance></result><result id="3b2de8f3-dabc-457b-b8c6-c8130f6ad9b2"><name>Weak Key Exchange (KEX) Algorithm(s) Supported (SSH)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:23Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:23Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.150713"><type>nvt</type><name>Weak Key Exchange (KEX) Algorithm(s) Supported (SSH)</name><family>SSL and TLS</family><cvss_base>5.3</cvss_base><severities score="5.3"><severity type="cvss_base_v3"><origin>Greenbone</origin><date>2021-11-23T10:58:59Z</date><score>5.3</score><value>CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N</value></severity></severities><tags>cvss_base_vector=CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N|summary=The remote SSH server is configured to allow / support weak key
+  exchange (KEX) algorithm(s).|insight=- 1024-bit MODP group / prime KEX algorithms:
+
+  Millions of HTTPS, SSH, and VPN servers all use the same prime numbers for Diffie-Hellman key
+  exchange. Practitioners believed this was safe as long as new key exchange messages were generated
+  for every connection. However, the first step in the number field sieve-the most efficient
+  algorithm for breaking a Diffie-Hellman connection-is dependent only on this prime.
+
+  A nation-state can break a 1024-bit prime.|affected=|impact=An attacker can quickly break individual connections.|solution=Disable the reported weak KEX algorithm(s)
+
+  - 1024-bit MODP group / prime KEX algorithms:
+
+  Alternatively use elliptic-curve Diffie-Hellmann in general, e.g. Curve 25519.|vuldetect=Checks the supported KEX algorithms of the remote SSH server.
+
+  Currently weak KEX algorithms are defined as the following:
+
+  - non-elliptic-curve Diffie-Hellmann (DH) KEX algorithms with 1024-bit MODP group / prime
+
+  - ephemerally generated key exchange groups uses SHA-1
+
+  - using RSA 1024-bit modulus key|solution_type=Mitigation</tags><solution type='Mitigation'>Disable the reported weak KEX algorithm(s)
+
+  - 1024-bit MODP group / prime KEX algorithms:
+
+  Alternatively use elliptic-curve Diffie-Hellmann in general, e.g. Curve 25519.</solution><refs><ref type="url" id="https://weakdh.org/sysadmin.html"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc9142"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc9142#name-summary-guidance-for-implem"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc6194"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc4253#section-6.5"/></refs></nvt><scan_nvt_version>2024-06-14T05:05:48Z</scan_nvt_version><threat>Medium</threat><severity>5.3</severity><qod><value>80</value><type></type></qod><description>The remote SSH server supports the following weak KEX algorithm(s):
+
+KEX algorithm                      | Reason
+-------------------------------------------------------------------------------------------
+diffie-hellman-group-exchange-sha1 | Using SHA-1
+diffie-hellman-group1-sha1         | Using Oakley Group 2 (a 1024-bit MODP group) and SHA-1
+</description><original_threat>Medium</original_threat><original_severity>5.3</original_severity><compliance>undefined</compliance></result><result id="dd69a306-9713-4070-9cce-646588c64a52"><name>Weak MAC Algorithm(s) Supported (SSH)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:23Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:23Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105610"><type>nvt</type><name>Weak MAC Algorithm(s) Supported (SSH)</name><family>SSL and TLS</family><cvss_base>2.6</cvss_base><severities score="2.6"><severity type="cvss_base_v2"><origin></origin><date>2016-04-19T09:49:32Z</date><score>2.6</score><value>AV:N/AC:H/Au:N/C:P/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:H/Au:N/C:P/I:N/A:N|summary=The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).|insight=|affected=|impact=|solution=Disable the reported weak MAC algorithm(s).|vuldetect=Checks the supported MAC algorithms (client-to-server and
+  server-to-client) of the remote SSH server.
+
+  Currently weak MAC algorithms are defined as the following:
+
+  - MD5 based algorithms
+
+  - 96-bit based algorithms
+
+  - 64-bit based algorithms
+
+  - &apos;none&apos; algorithm|solution_type=Mitigation</tags><solution type='Mitigation'>Disable the reported weak MAC algorithm(s).</solution><refs><ref type="url" id="https://www.rfc-editor.org/rfc/rfc6668"/><ref type="url" id="https://www.rfc-editor.org/rfc/rfc4253#section-6.4"/></refs></nvt><scan_nvt_version>2024-06-14T05:05:48Z</scan_nvt_version><threat>Low</threat><severity>2.6</severity><qod><value>80</value><type></type></qod><description>The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+umac-64@openssh.com
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+umac-64@openssh.com
+</description><original_threat>Low</original_threat><original_severity>2.6</original_severity><compliance>undefined</compliance></result><result id="fa6006f6-41f6-48b0-a1ef-a5bcbc41b2fe"><name>Web Application Scanning Consolidation / Info Reporting</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:19Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:19Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.111038"><type>nvt</type><name>Web Application Scanning Consolidation / Info Reporting</name><family>Web application abuses</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2015-09-14T05:00:00Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The script consolidates and reports various information for web
+  application (formerly called &apos;CGI&apos;) scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured &apos;cgi_path&apos; within the &apos;Scanner Preferences&apos; of the scan config in use
+
+  - The configured &apos;Enable CGI scanning&apos;, &apos;Enable generic web application scanning&apos; and
+  &apos;Add historic /scripts and /cgi-bin to directories for CGI scanning&apos; within the
+  &apos;Global variable settings&apos; of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://forum.greenbone.net/c/vulnerability-tests/7"/></refs></nvt><scan_nvt_version>2026-02-24T05:57:09Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>The Hostname/IP &quot;192.168.40.3&quot; was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the &quot;Enable generic web application scanning&quot; option within the &quot;Global variable settings&quot; of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent &quot;Mozilla/5.0 [en] (X11, U; OpenVAS-VT &lt;version replaced&gt;)&quot; was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the &quot;Add historic /scripts and /cgi-bin to directories for CGI scanning&quot; option within the &quot;Global variable settings&quot; of the scan config in use.
+
+A possible recursion was detected during web application scanning:
+
+The service is using a relative URL in one or more HTML references where e.g. /file1.html contains &lt;a href=&quot;subdir/file2.html&quot;&gt; and a subsequent request for subdir/file2.html is linking to subdir/file2.html. This would resolves to subdir/subdir/file2.html causing a recursion. To work around this counter-measures have been enabled but the service should be fixed as well to not use such problematic links. Below an excerpt of URLs is shown to help identify those issues.
+
+Syntax : URL (HTML link)
+
+http://192.168.40.3/mutillidae/index.php (index.php?page=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php)
+http://192.168.40.3/mutillidae/index.php (index.php?page=documentation/vulnerabilities.php)
+
+The following directories were used for web application scanning:
+
+http://192.168.40.3/
+http://192.168.40.3/cgi-bin
+http://192.168.40.3/dav
+http://192.168.40.3/doc
+http://192.168.40.3/dvwa
+http://192.168.40.3/index
+http://192.168.40.3/index/ajax
+http://192.168.40.3/index/download
+http://192.168.40.3/mutillidae
+http://192.168.40.3/mutillidae/documentation
+http://192.168.40.3/oops/TWiki
+http://192.168.40.3/phpMyAdmin
+http://192.168.40.3/rdiff/TWiki
+http://192.168.40.3/test
+http://192.168.40.3/test/testoutput
+http://192.168.40.3/tikiwiki
+http://192.168.40.3/tikiwiki/lib
+http://192.168.40.3/twiki
+http://192.168.40.3/twiki/pub
+http://192.168.40.3/twiki/pub/TWiki/FileAttachment
+http://192.168.40.3/twiki/pub/TWiki/TWikiDocGraphics
+http://192.168.40.3/twiki/pub/TWiki/TWikiLogos
+http://192.168.40.3/twiki/pub/TWiki/TWikiPreferences
+http://192.168.40.3/twiki/pub/TWiki/TWikiTemplates
+http://192.168.40.3/twiki/pub/icn
+http://192.168.40.3/view/TWiki
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+
+The following directories were excluded from web application scanning because the &quot;Regex pattern to exclude directories from CGI scanning&quot; setting of the VT &quot;Global variable settings&quot; (OID: 1.3.6.1.4.1.25623.1.0.12288) for this scan was: &quot;/(index\.php|image|img|css|js$|js/|javascript|style|theme|icon|jquery|graphic|grafik|picture|bilder|thumbnail|media/|skins?/)&quot;
+
+http://192.168.40.3/dvwa/dvwa/css
+http://192.168.40.3/dvwa/dvwa/images
+http://192.168.40.3/icons
+http://192.168.40.3/index.php
+http://192.168.40.3/index.php/Home
+http://192.168.40.3/index.php/Home/login
+http://192.168.40.3/index.php/apps
+http://192.168.40.3/index.php/apps/app_api
+http://192.168.40.3/index.php/apps/app_api/proxy
+http://192.168.40.3/index.php/apps/app_api/proxy/flow
+http://192.168.40.3/index.php/apps/app_api/proxy/flow/api
+http://192.168.40.3/index.php/apps/app_api/proxy/flow/api/w
+http://192.168.40.3/index.php/apps/app_api/proxy/flow/api/w/nextcloud
+http://192.168.40.3/index.php/apps/theming
+http://192.168.40.3/index.php/apps/theming/css
+http://192.168.40.3/index.php/apps/theming/js
+http://192.168.40.3/index.php/apps/theming/theme
+http://192.168.40.3/index.php/installer
+http://192.168.40.3/index.php/login
+http://192.168.40.3/index.php/s
+http://192.168.40.3/index.php/wp-json
+http://192.168.40.3/mutillidae/images
+http://192.168.40.3/mutillidae/javascript
+http://192.168.40.3/mutillidae/javascript/ddsmoothmenu
+http://192.168.40.3/mutillidae/styles
+http://192.168.40.3/mutillidae/styles/ddsmoothmenu
+http://192.168.40.3/phpMyAdmin/themes/original/img
+http://192.168.40.3/tikiwiki/img/icons
+http://192.168.40.3/tikiwiki/styles
+http://192.168.40.3/tikiwiki/styles/transitions
+
+Directory listing/indexing found at:
+
+http://192.168.40.3/dav/
+http://192.168.40.3/mutillidae/documentation/
+http://192.168.40.3/test/
+http://192.168.40.3/test/testoutput/
+http://192.168.40.3/twiki/TWikiDocumentation.html
+http://192.168.40.3/twiki/bin/view/TWiki/TWikiDocumentation
+http://192.168.40.3/twiki/bin/view/TWiki/TWikiInstallationGuide
+
+Extraneous phpinfo() output found at:
+
+http://192.168.40.3/mutillidae/phpinfo.php
+Concluded from:
+  &lt;title&gt;phpinfo()&lt;/title&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW,NOARCHIVE&quot; /&gt;&lt;/head&gt;
+  &lt;tr&gt;&lt;td class=&quot;e&quot;&gt;Configuration File (php.ini) Path &lt;/td&gt;&lt;td class=&quot;v&quot;&gt;/etc/php5/cgi &lt;/td&gt;&lt;/tr&gt;
+  &lt;h2&gt;PHP Core&lt;/h2&gt;
+  &lt;h2&gt;PHP Variables&lt;/h2&gt;
+
+http://192.168.40.3/phpinfo.php
+Concluded from:
+  &lt;title&gt;phpinfo()&lt;/title&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW,NOARCHIVE&quot; /&gt;&lt;/head&gt;
+  &lt;tr&gt;&lt;td class=&quot;e&quot;&gt;Configuration File (php.ini) Path &lt;/td&gt;&lt;td class=&quot;v&quot;&gt;/etc/php5/cgi &lt;/td&gt;&lt;/tr&gt;
+  &lt;h2&gt;PHP Core&lt;/h2&gt;
+  &lt;h2&gt;PHP Variables&lt;/h2&gt;PHP script discloses physical path at:
+
+http://192.168.40.3/mutillidae/documentation/vulnerabilities.php (/var/www/mutillidae/documentation/vulnerabilities.php)
+http://192.168.40.3/tikiwiki/tiki-install.php (/var/www/tikiwiki/lib/adodb/drivers/adodb-mysql.inc.php)
+
+The &quot;Number of pages to mirror&quot; setting (Current: 200) of the VT &quot;Web mirroring&quot; (OID: 1.3.6.1.4.1.25623.1.0.10662) was reached. Raising this limit allows to mirror this host more thoroughly but might increase the scanning time.
+
+NOTE: The &apos;Maximum number of items shown for each list&apos; setting has been reached. There are 355 additional entries available for the following truncated list.
+
+The following CGIs were discovered:
+
+Syntax : cginame (arguments [default value])
+
+http://192.168.40.3/dav/ (C=S;O [A] C=N;O [D] C=M;O [A] C=D;O [A] )
+http://192.168.40.3/dvwa/login.php (username [] password [] Login [Login] )
+http://192.168.40.3/mutillidae/ (page [add-to-your-blog.php] )
+http://192.168.40.3/mutillidae/documentation/ (C=S;O [A] C=N;O [D] C=M;O [A] C=D;O [A] )
+http://192.168.40.3/mutillidae/index.php (username [anonymous] do [toggle-hints] page [home.php] )
+http://192.168.40.3/oops/TWiki/TWikiHistory (template [oopsrev] param1 [1.10] )
+http://192.168.40.3/phpMyAdmin/index.php (phpMyAdmin [58c9266b5c7ff178770192186ff586878ef565d1] token [***replaced***] pma_username [] table [] lang [] server [1] db [] convcharset [utf-8] pma_password [] )
+http://192.168.40.3/phpMyAdmin/phpmyadmin.css.php (token [***replaced***] js_frame [right] lang [en-utf-8] nocache [2457687151] convcharset [utf-8] )
+http://192.168.40.3/rdiff/TWiki/TWikiHistory (rev1 [1.10] rev2 [1.9] )
+http://192.168.40.3/test/ (C=S;O [A] C=N;O [D] C=M;O [A] C=D;O [A] )
+http://192.168.40.3/test/testoutput/ (C=S;O [A] C=N;O [D] C=M;O [A] C=D;O [A] )
+http://192.168.40.3/tikiwiki/tiki-install.php (host [localhost] dbinfo [] pass [] name [] db [] restart [1] resetdb [] user [] )
+http://192.168.40.3/twiki/bin/attach/TWiki/FileAttachment (filename [Sample.txt] revInfo [1] )
+http://192.168.40.3/twiki/bin/edit/Know/ReadmeFirst (t [1782856023] )
+http://192.168.40.3/twiki/bin/edit/Know/WebChanges (t [1782855872] )
+http://192.168.40.3/twiki/bin/edit/Know/WebHome (t [1782855838] )
+http://192.168.40.3/twiki/bin/edit/Know/WebIndex (t [1782856024] )
+http://192.168.40.3/twiki/bin/edit/Know/WebNotify (t [1782856025] )
+http://192.168.40.3/twiki/bin/edit/Know/WebPreferences (t [1782855877] )
+http://192.168.40.3/twiki/bin/edit/Know/WebSearch (t [1782855876] )
+http://192.168.40.3/twiki/bin/edit/Know/WebStatistics (t [1782856026] )
+http://192.168.40.3/twiki/bin/edit/Know/WebTopicList (t [1782856025] )
+http://192.168.40.3/twiki/bin/edit/Main/BillClinton (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/CharleytheHorse (t [1782856037] )
+http://192.168.40.3/twiki/bin/edit/Main/ChristopheVermeulen (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/DavidWarman (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/EngineeringGroup (topicparent [Main.TWikiGroups] )
+http://192.168.40.3/twiki/bin/edit/Main/GoodStyle (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/JohnAltstadt (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/JohnTalintyre (t [1782856038] )
+http://192.168.40.3/twiki/bin/edit/Main/MartinRaabe (topicparent [TWiki.TWikiUpgradeGuide] )
+http://192.168.40.3/twiki/bin/edit/Main/NicholasLee (t [1782856039] )
+http://192.168.40.3/twiki/bin/edit/Main/OfficeLocations (t [1782855846] )
+http://192.168.40.3/twiki/bin/edit/Main/PeterFokkinga (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/PeterThoeny (t [1782855937] )
+http://192.168.40.3/twiki/bin/edit/Main/SupportGroup (topicparent [Main.TWikiGroups] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiAdminGroup (t [1782856043] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiGroups (t [1782855844] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiGuest (t [1782856040] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiPreferences (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiRegistration (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiUsers (t [1782855843] )
+http://192.168.40.3/twiki/bin/edit/Main/TWikiWeb (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/TestArea (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/TextFormattingFAQ (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/TextFormattingRules (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/WebChanges (t [1782855847] )
+http://192.168.40.3/twiki/bin/edit/Main/WebHome (t [1782855827] )
+http://192.168.40.3/twiki/bin/edit/Main/WebIndex (t [1782855852] )
+http://192.168.40.3/twiki/bin/edit/Main/WebNotify (t [1782855883] )
+http://192.168.40.3/twiki/bin/edit/Main/WebPreferences (t [1782855855] )
+http://192.168.40.3/twiki/bin/edit/Main/WebSearch (t [1782855853] )
+http://192.168.40.3/twiki/bin/edit/Main/WebStatistics (t [1782855883] )
+http://192.168.40.3/twiki/bin/edit/Main/WebTopicEditTemplate (topicparent [Main.WebPreferences] )
+http://192.168.40.3/twiki/bin/edit/Main/WebTopicList (t [1782855882] )
+http://192.168.40.3/twiki/bin/edit/Main/WelcomeGuest (topicparent [Main.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Main/WikiName (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Main/WikiNotation (topicparent [Main.TWikiUsers] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic1 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic2 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic3 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic4 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic5 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic6 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic7 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/TestTopic8 (topicparent [Sandbox.WebHome] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebChanges (t [1782855878] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebHome (t [1782855840] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebIndex (t [1782856029] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebNotify (t [1782856034] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebPreferences (t [1782855881] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebSearch (t [1782855880] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebStatistics (t [1782856035] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebTopicEditTemplate (topicparent [Sandbox.WebPreferences] )
+http://192.168.40.3/twiki/bin/edit/Sandbox/WebTopicList (t [1782856034] )
+http://192.168.40.3/twiki/bin/edit/TWiki/ (topic [] topicparent [TWikiFAQ] onlywikiname [on] templatetopic [TWikiFaqTemplate] )
+http://192.168.40.3/twiki/bin/edit/TWiki/AppendixFileSystem (t [1782856011] )
+http://192.168.40.3/twiki/bin/edit/TWiki/BumpyWord (t [1782856046] )
+http://192.168.40.3/twiki/bin/edit/TWiki/DefaultPlugin (t [1782855962] )
+http://192.168.40.3/twiki/bin/edit/TWiki/FileAttachment (t [1782855957] )
+http://192.168.40.3/twiki/bin/edit/TWiki/FormattedSearch (t [1782855991] )
+http://192.168.40.3/twiki/bin/edit/TWiki/GnuGeneralPublicLicense (t [1782856019] )
+http://192.168.40.3/twiki/bin/edit/TWiki/GoodStyle (t [1782855927] )
+http://192.168.40.3/twiki/bin/edit/TWiki/InstalledPlugins (t [1782856016] )
+http://192.168.40.3/twiki/bin/edit/TWiki/InstantEnhancements (t [1782855968] )
+http://192.168.40.3/twiki/bin/edit/TWiki/InterWikis (t [1782855964] )
+http://192.168.40.3/twiki/bin/edit/TWiki/InterwikiPlugin (t [1782855963] )
+http://192.168.40.3/twiki/bin/edit/TWiki/ManagingTopics (t [1782856008] )
+http://192.168.40.3/twiki/bin/edit/TWiki/ManagingWebs (t [1782856010] )
+http://192.168.40.3/twiki/bin/edit/TWiki/MeaningfulTitle (topicparent [TWiki.TextFormattingFAQ] )
+http://192.168.40.3/twiki/bin/edit/TWiki/NewTopic (topicparent [TWiki.TWikiShorthand] )
+http://192.168.40.3/twiki/bin/edit/TWiki/NotExistingYet (topicparent [TWiki.TextFormattingRules] )
+http://192.168.40.3/twiki/bin/edit/TWiki/PeterThoeny (t [1782856018] )
+http://192.168.40.3/twiki/bin/edit/TWiki/SiteMap (t [1782856017] )
+http://192.168.40.3/twiki/bin/edit/TWiki/StartingPoints (t [1782855857] )
+http://192.168.40.3/twiki/bin/edit/TWiki/TWikiAccessControl (t [1782855983] )
+http://192.168.40.3/twiki/bin/edit/TWiki/TWikiAdminCookBook (t [1782855966] )
+http://192.168.40.3/twiki/bin/edit/TWiki/TWikiCourseOutlineExample (topicparent [TWiki.WebHome] )
+http://192.168.40.3/twiki/bin/edit/TWiki/TWikiFAQ (t [1782855888] )
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=141 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>141</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="141" max="10"/><result_count>619<filtered>147</filtered><page>7</page></result_count></get_results_response>

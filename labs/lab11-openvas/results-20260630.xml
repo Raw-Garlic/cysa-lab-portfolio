@@ -1,0 +1,353 @@
+<get_results_response status="200" status_text="OK"><result id="31848647-0960-4fa9-81d1-651b4b362ab8"><name>Apache HTTP Server Detection Consolidation</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:49:30Z</modification_time><comment></comment><creation_time>2026-06-30T21:49:30Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.117232"><type>nvt</type><name>Apache HTTP Server Detection Consolidation</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2021-02-25T11:11:24Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Consolidation of Apache HTTP Server detections.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://httpd.apache.org"/></refs></nvt><scan_nvt_version>2024-03-08T15:37:10Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Detected Apache HTTP Server
+
+Version:       2.2.8
+Location:      80/tcp
+CPE:           cpe:/a:apache:http_server:2.2.8
+
+Concluded from version/product identification result:
+Server: Apache/2.2.8 (Ubuntu) DAV/2
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="5a16f0f7-9fed-401d-89fa-23db657c6d80"><name>Apache HTTP Server &apos;httpOnly&apos; Cookie Information Disclosure Vulnerability</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:05:10Z</modification_time><comment></comment><creation_time>2026-06-30T22:05:10Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.902830"><type>nvt</type><name>Apache HTTP Server &apos;httpOnly&apos; Cookie Information Disclosure Vulnerability</name><family>Web Servers</family><cvss_base>4.3</cvss_base><severities score="4.3"><severity type="cvss_base_v2"><origin></origin><date>2012-04-26T06:42:12Z</date><score>4.3</score><value>AV:N/AC:M/Au:N/C:P/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:M/Au:N/C:P/I:N/A:N|summary=Apache HTTP Server is prone to a cookie information disclosure vulnerability.|insight=The flaw is due to an error within the default error response for
+  status code 400 when no custom ErrorDocument is configured, which can be
+  exploited to expose &apos;httpOnly&apos; cookies.|affected=Apache HTTP Server versions 2.2.0 through 2.2.21.|impact=Successful exploitation will allow attackers to obtain sensitive information
+  that may aid in further attacks.|solution=Update to Apache HTTP Server version 2.2.22 or later.|vuldetect=|solution_type=VendorFix</tags><solution type='VendorFix'>Update to Apache HTTP Server version 2.2.22 or later.</solution><refs><ref type="cve" id="CVE-2012-0053"/><ref type="url" id="http://secunia.com/advisories/47779"/><ref type="url" id="http://www.securityfocus.com/bid/51706"/><ref type="url" id="http://www.exploit-db.com/exploits/18442"/><ref type="url" id="http://rhn.redhat.com/errata/RHSA-2012-0128.html"/><ref type="url" id="http://httpd.apache.org/security/vulnerabilities_22.html"/><ref type="url" id="http://svn.apache.org/viewvc?view=revision&amp;revision=1235454"/><ref type="url" id="http://lists.opensuse.org/opensuse-security-announce/2012-02/msg00026.html"/><ref type="cert-bund" id="CB-K15/0080"/><ref type="cert-bund" id="CB-K14/1505"/><ref type="cert-bund" id="CB-K14/0608"/><ref type="dfn-cert" id="DFN-CERT-2015-0082"/><ref type="dfn-cert" id="DFN-CERT-2014-1592"/><ref type="dfn-cert" id="DFN-CERT-2014-0635"/><ref type="dfn-cert" id="DFN-CERT-2013-1307"/><ref type="dfn-cert" id="DFN-CERT-2012-1276"/><ref type="dfn-cert" id="DFN-CERT-2012-1112"/><ref type="dfn-cert" id="DFN-CERT-2012-0928"/><ref type="dfn-cert" id="DFN-CERT-2012-0758"/><ref type="dfn-cert" id="DFN-CERT-2012-0744"/><ref type="dfn-cert" id="DFN-CERT-2012-0568"/><ref type="dfn-cert" id="DFN-CERT-2012-0425"/><ref type="dfn-cert" id="DFN-CERT-2012-0424"/><ref type="dfn-cert" id="DFN-CERT-2012-0387"/><ref type="dfn-cert" id="DFN-CERT-2012-0343"/><ref type="dfn-cert" id="DFN-CERT-2012-0332"/><ref type="dfn-cert" id="DFN-CERT-2012-0306"/><ref type="dfn-cert" id="DFN-CERT-2012-0264"/><ref type="dfn-cert" id="DFN-CERT-2012-0203"/><ref type="dfn-cert" id="DFN-CERT-2012-0188"/></refs></nvt><scan_nvt_version>2026-02-24T05:57:09Z</scan_nvt_version><threat>Medium</threat><severity>4.3</severity><qod><value>99</value><type></type></qod><description></description><original_threat>Medium</original_threat><original_severity>4.3</original_severity><compliance>undefined</compliance></result><result id="d59790d9-174d-4f6c-b5a9-300e528011fb"><name>Apache JServ Protocol (AJP) v1.3 Detection (TCP)</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:56:42Z</modification_time><comment></comment><creation_time>2026-06-30T21:56:42Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>8009/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108082"><type>nvt</type><name>Apache JServ Protocol (AJP) v1.3 Detection (TCP)</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2017-02-10T12:00:00Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=TCP based detection of services supporting the Apache JServ
+  Protocol (AJP) in version 1.3.|insight=The AJP protocol is used in various products like e.g. Apache
+  Tomcat, JBoss or Wildfly.|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://tomcat.apache.org/connectors-doc/ajp/ajpv13a.html"/></refs></nvt><scan_nvt_version>2025-07-11T05:42:17Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>A service supporting the Apache JServ Protocol (AJP) v1.3 seems to be running on this port.
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="a8bb2760-cbbb-492f-a2ad-20437d755d53"><name>Apache Tomcat AJP RCE Vulnerability (Ghostcat) - Active Check</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:05:10Z</modification_time><comment></comment><creation_time>2026-06-30T22:05:10Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>8009/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.143545"><type>nvt</type><name>Apache Tomcat AJP RCE Vulnerability (Ghostcat) - Active Check</name><family>Web Servers</family><cvss_base>9.8</cvss_base><severities score="9.8"><severity type="cvss_base_v3"><origin>NVD</origin><date>2021-02-24T12:15:00Z</date><score>9.8</score><value>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</value></severity></severities><tags>cvss_base_vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H|summary=Apache Tomcat is prone to a remote code execution (RCE)
+  vulnerability in the AJP connector dubbed &apos;Ghostcat&apos;.|insight=Apache Tomcat server has a file containing vulnerability, which
+  can be used by an attacker to read or include any files in all webapp directories on Tomcat, such
+  as webapp configuration files or source code.|affected=Apache Tomcat versions prior 7.0.100, 8.5.51 or 9.0.31 when the
+  AJP connector is enabled.
+
+  Other products like JBoss or Wildfly which are using Tomcat might be affected as well.|impact=|solution=- Update Apache Tomcat to version 7.0.100, 8.5.51, 9.0.31 or
+  later
+
+  - For other products using Tomcat please contact the vendor for more information on fixed
+  versions|vuldetect=Sends a crafted AJP request and checks the response.|solution_type=VendorFix</tags><solution type='VendorFix'>- Update Apache Tomcat to version 7.0.100, 8.5.51, 9.0.31 or
+  later
+
+  - For other products using Tomcat please contact the vendor for more information on fixed
+  versions</solution><refs><ref type="cve" id="CVE-2020-1938"/><ref type="url" id="https://lists.apache.org/thread/bnys5lvg1875dsslkkx2vmwxv833l35x"/><ref type="url" id="https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.31"/><ref type="url" id="https://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.5.51"/><ref type="url" id="https://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.100"/><ref type="url" id="https://web.archive.org/web/20250114042903/https://www.chaitin.cn/en/ghostcat"/><ref type="url" id="https://www.cnvd.org.cn/flaw/show/CNVD-2020-10487"/><ref type="url" id="https://github.com/YDHCUI/CNVD-2020-10487-Tomcat-Ajp-lfi"/><ref type="url" id="https://securityboulevard.com/2020/02/patch-your-tomcat-and-jboss-instances-to-protect-from-ghostcat-vulnerability-cve-2020-1938-and/"/><ref type="url" id="https://www.cisa.gov/known-exploited-vulnerabilities-catalog"/><ref type="cisa" id="Known Exploited Vulnerability (KEV) catalog"/><ref type="cert-bund" id="WID-SEC-2024-0528"/><ref type="cert-bund" id="WID-SEC-2023-2480"/><ref type="cert-bund" id="CB-K20/0711"/><ref type="cert-bund" id="CB-K20/0705"/><ref type="cert-bund" id="CB-K20/0693"/><ref type="cert-bund" id="CB-K20/0555"/><ref type="cert-bund" id="CB-K20/0543"/><ref type="cert-bund" id="CB-K20/0154"/><ref type="dfn-cert" id="DFN-CERT-2021-1736"/><ref type="dfn-cert" id="DFN-CERT-2020-1508"/><ref type="dfn-cert" id="DFN-CERT-2020-1413"/><ref type="dfn-cert" id="DFN-CERT-2020-1276"/><ref type="dfn-cert" id="DFN-CERT-2020-1134"/><ref type="dfn-cert" id="DFN-CERT-2020-0850"/><ref type="dfn-cert" id="DFN-CERT-2020-0835"/><ref type="dfn-cert" id="DFN-CERT-2020-0821"/><ref type="dfn-cert" id="DFN-CERT-2020-0569"/><ref type="dfn-cert" id="DFN-CERT-2020-0557"/><ref type="dfn-cert" id="DFN-CERT-2020-0501"/><ref type="dfn-cert" id="DFN-CERT-2020-0381"/></refs></nvt><scan_nvt_version>2026-03-18T05:59:10Z</scan_nvt_version><threat>Critical</threat><severity>9.8</severity><qod><value>99</value><type></type></qod><description>It was possible to read the file &quot;/WEB-INF/web.xml&quot; through the AJP connector.
+
+Result:
+
+AB 8\x0004 Ã\x0088 \x0002OK  \x0001 \x000CContent-Type  \x001Ctext/html;charset=ISO-8859-1 AB\x001FÃ¼\x0003\x001FÃ¸&lt;!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the &quot;License&quot;); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;Apache Tomcat/5.5&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+    /*&lt;![CDATA[*/
+      body {
+          color: #000000;
+          background-color: #FFFFFF;
+	  font-family: Arial, &quot;Times New Roman&quot;, Times, serif;
+          margin: 10px 0px;
+      }
+
+    img {
+       border: none;
+    }
+    
+    a:link, a:visited {
+        color: blue
+    }
+
+    th {
+        font-family: Verdana, &quot;Times New Roman&quot;, Times, serif;
+        font-size: 110%;
+        font-weight: normal;
+        font-style: italic;
+        background: #D2A41C;
+        text-align: left;
+    }
+
+    td {
+        color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    td.menu {
+        background: #FFDC75;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .code {
+        color: #000000;
+        font-family: &quot;Courier New&quot;, Courier, monospace;
+        font-size: 110%;
+        margin-left: 2.5em;
+    }
+    
+     #banner {
+        margin-bottom: 12px;
+     }
+
+     p#congrats {
+         margin-top: 0;
+         font-weight: bold;
+         text-align: center;
+     }
+
+     p#footer {
+         text-align: right;
+         font-size: 80%;
+     }
+     /*]]&gt;*/
+   &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- Header --&gt;
+&lt;table id=&quot;banner&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; style=&quot;width:130px&quot;&gt;
+        &lt;a href=&quot;http://tomcat.apache.org/&quot;&gt;
+	  &lt;img src=&quot;tomcat.gif&quot; height=&quot;92&quot; width=&quot;130&quot; alt=&quot;The Mighty Tomcat - MEOW!&quot;/&gt;
+	&lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;b&gt;Apache Tomcat/5.5&lt;/b&gt;&lt;/td&gt;
+      &lt;td align=&quot;right&quot;&gt;
+        &lt;a href=&quot;http://www.apache.org/&quot;&gt;
+	  &lt;img src=&quot;asf-logo-wide.gif&quot; height=&quot;51&quot; width=&quot;537&quot; alt=&quot;The Apache Software Foundation&quot;/&gt;
+	&lt;/a&gt;
+       &lt;/td&gt;
+     &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;tr&gt;
+
+        &lt;!-- Table of Contents --&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+            &lt;table width=&quot;100%&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+                &lt;tr&gt;
+		  &lt;th&gt;Administration&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+		  &lt;td class=&quot;menu&quot;&gt;
+		    &lt;a href=&quot;manager/status&quot;&gt;Status&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;admin&quot;&gt;Tomcat&amp;nbsp;Administration&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;manager/html&quot;&gt;Tomcat&amp;nbsp;Manager&lt;/a&gt;&lt;br/&gt;
+                    &amp;nbsp;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+
+	    &lt;br /&gt;
+            &lt;table width=&quot;100%&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+                &lt;tr&gt;
+		  &lt;th&gt;Documentation&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;menu&quot;&gt;
+                    &lt;a href=&quot;RELEASE-NOTES.txt&quot;&gt;Release&amp;nbsp;Notes&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;tomcat-docs/changelog.html&quot;&gt;Change&amp;nbsp;Log&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;tomcat-docs&quot;&gt;Tomcat&amp;nbsp;Documentation&lt;/a&gt;&lt;br/&gt;                        &amp;nbsp;
+                    &amp;nbsp;
+		    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+	    
+            &lt;br/&gt;
+            &lt;table width=&quot;100%&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Tomcat Online&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;menu&quot;&gt;
+                    &lt;a href=&quot;http://tomcat.apache.org/&quot;&gt;Home&amp;nbsp;Page&lt;/a&gt;&lt;br/&gt;
+		    &lt;a href=&quot;http://tomcat.apache.org/faq/&quot;&gt;FAQ&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;http://tomcat.apache.org/bugreport.html&quot;&gt;Bug&amp;nbsp;Database&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;http://issues.apache.org/bugzilla/buglist.cgi?bug_status=UNCONFIRMED&amp;amp;bug_status=NEW&amp;amp;bug_status=ASSIGNED&amp;amp;bug_status=REOPENED&amp;amp;bug_status=RESOLVED&amp;amp;resolution=LATER&amp;amp;resolution=REMIND&amp;amp;resolution=---&amp;amp;bugidtype=include&amp;amp;product=Tomcat+5&amp;amp;cmdtype=doit&amp;amp;order=Importance&quot;&gt;Open Bugs&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/tomcat-users/&quot;&gt;Users&amp;nbsp;Mailing&amp;nbsp;List&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/tomcat-dev/&quot;&gt;Developers&amp;nbsp;Mailing&amp;nbsp;List&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;irc://irc.freenode.net/#tomcat&quot;&gt;IRC&lt;/a&gt;&lt;br/&gt;
+		    &amp;nbsp;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+	    
+            &lt;br/&gt;
+            &lt;table width=&quot;100%&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Examples&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;menu&quot;&gt;
+                    &lt;a href=&quot;jsp-examples/&quot;&gt;JSP&amp;nbsp;Examples&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;servlets-examples/&quot;&gt;Servlet&amp;nbsp;Examples&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;webdav/&quot;&gt;WebDAV&amp;nbsp;capabilities&lt;/a&gt;&lt;br/&gt;
+     		    &amp;nbsp;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+	    
+            &lt;br/&gt;
+            &lt;table width=&quot;100%&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+                &lt;tr&gt;
+		  &lt;th&gt;Miscellaneous&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;menu&quot;&gt;
+                    &lt;a href=&quot;http://java.sun.com/products/jsp&quot;&gt;Sun&apos;s&amp;nbsp;Java&amp;nbsp;Server&amp;nbsp;Pages&amp;nbsp;Site&lt;/a&gt;&lt;br/&gt;
+                    &lt;a href=&quot;http://java.sun.com/products/servlet&quot;&gt;Sun&apos;s&amp;nbsp;Servlet&amp;nbsp;Site&lt;/a&gt;&lt;br/&gt;
+    		    &amp;nbsp;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+
+        &lt;td style=&quot;width:20px&quot;&gt;&amp;nbsp;&lt;/td&gt;
+	
+        &lt;!-- Body --&gt;
+        &lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;
+          &lt;p id=&quot;congrats&quot;&gt;If you&apos;re seeing this page via a web browser, it means you&apos;ve setup Tomcat successfully. Congratulations!&lt;/p&gt;
+ 
+          &lt;p&gt;As you may have guessed by now, this is the default Tomcat home page. It can be found on the local filesystem at:&lt;/p&gt;
+          &lt;p class=&quot;code&quot;&gt;$CATALINA_HOME/webapps/ROOT/index.jsp&lt;/p&gt;
+	  
+          &lt;p&gt;where &quot;$CATALINA_HOME&quot; is the root of the Tomcat installation directory. If you&apos;re seeing this page, and you don&apos;t think you should be, then either you&apos;re either a user who has arrived at new installation of Tomcat, or you&apos;re an administrator who hasn&apos;t got his/her setup quite right. Providing the latter is the case, please refer to the &lt;a href=&quot;tomcat-docs&quot;&gt;Tomcat Documentation&lt;/a&gt; for more detailed setup and administration information than is found in the INSTALL file.&lt;/p&gt;
+
+            &lt;p&gt;&lt;b&gt;NOTE:&lt;/b&gt; This page is precompiled. If you change it, this page will not change since
+                  it was compiled into a servlet at build time.
+                  (See &lt;tt&gt;$CATALINA_HOME/webapps/ROOT/WEB-INF/web.xml&lt;/tt&gt; as to how it was mapped.)
+            &lt;/p&gt;
+
+            &lt;p&gt;&lt;b&gt;NOTE: For security reasons, using the administration webapp
+            is restricted to users with role &quot;admin&quot;. The manager webapp
+            is restricted to users with role &quot;manager&quot;.&lt;/b&gt;
+            Users are defined in &lt;code&gt;$CATALINA_HOME/conf/tomcat-users.xml&lt;/code&gt;.&lt;/p&gt;
+
+            &lt;p&gt;Included with this release are a host of sample Servlets and JSPs (with associated source code), extensive documentation (including the Servlet 2.4 and JSP 2.0 API JavaDoc), and an introductory guide to developing web applications.&lt;/p&gt;
+
+            &lt;p&gt;Tomcat mailing lists are available at the Tomcat project web site:&lt;/p&gt;
+
+           &lt;ul&gt;
+               &lt;li&gt;&lt;b&gt;&lt;a href=&quot;mailto:users@tomcat.apache.org&quot;&gt;users@tomc
+</description><original_threat>Critical</original_threat><original_severity>9.8</original_severity><compliance>undefined</compliance></result><result id="a0440bae-527c-4da0-a76e-84d54051efda"><name>awiki &lt;= 20100125 Multiple LFI Vulnerabilities - Active Check</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:03:04Z</modification_time><comment></comment><creation_time>2026-06-30T22:03:04Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103210"><type>nvt</type><name>awiki &lt;= 20100125 Multiple LFI Vulnerabilities - Active Check</name><family>Web application abuses</family><cvss_base>5.0</cvss_base><severities score="5.0"><severity type="cvss_base_v2"><origin></origin><date>2011-08-18T13:52:07Z</date><score>5.0</score><value>AV:N/AC:L/Au:N/C:P/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:P/I:N/A:N|summary=awiki is prone to multiple local file include (LFI)
+  vulnerabilities because it fails to properly sanitize user-supplied input.|insight=|affected=awiki version 20100125 and prior.|impact=An attacker can exploit this vulnerability to obtain potentially
+  sensitive information and execute arbitrary local scripts in the context of the webserver
+  process. This may allow the attacker to compromise the application and the host.|solution=No known solution was made available for at least one year
+  since the disclosure of this vulnerability. Likely none will be provided anymore. General
+  solution options are to upgrade to a newer release, disable respective features, remove the
+  product or replace the product by another one.|vuldetect=Sends a crafted HTTP GET request and checks the response.|solution_type=WillNotFix</tags><solution type='WillNotFix'>No known solution was made available for at least one year
+  since the disclosure of this vulnerability. Likely none will be provided anymore. General
+  solution options are to upgrade to a newer release, disable respective features, remove the
+  product or replace the product by another one.</solution><refs><ref type="url" id="https://www.exploit-db.com/exploits/36047/"/><ref type="url" id="http://www.securityfocus.com/bid/49187"/></refs></nvt><scan_nvt_version>2025-04-15T05:54:49Z</scan_nvt_version><threat>Medium</threat><severity>5.0</severity><qod><value>99</value><type></type></qod><description>Vulnerable URL: http://192.168.40.3/mutillidae/index.php?page=/etc/passwd
+</description><original_threat>Medium</original_threat><original_severity>5</original_severity><compliance>undefined</compliance></result><result id="94d8464d-1995-4d44-982f-6fa0f8e421ee"><name>Check if Mailserver answer to VRFY and EXPN requests</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:38Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:38Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.100072"><type>nvt</type><name>Check if Mailserver answer to VRFY and EXPN requests</name><family>SMTP problems</family><cvss_base>5.0</cvss_base><severities score="5.0"><severity type="cvss_base_v2"><origin></origin><date>2009-03-23T18:32:33Z</date><score>5.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:P</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:P|summary=The Mailserver on this host answers to VRFY and/or EXPN requests.|insight=VRFY and EXPN ask the server for information about an address. They are
+  inherently unusable through firewalls, gateways, mail exchangers for part-time hosts, etc.|affected=|impact=|solution=Disable VRFY and/or EXPN on your Mailserver.
+
+  For postfix add &apos;disable_vrfy_command=yes&apos; in &apos;main.cf&apos;.
+
+  For Sendmail add the option &apos;O PrivacyOptions=goaway&apos;.
+
+  It is suggested that, if you really want to publish this type of information, you use a mechanism
+  that legitimate users actually know about, such as Finger or HTTP.|vuldetect=|solution_type=Workaround</tags><solution type='Workaround'>Disable VRFY and/or EXPN on your Mailserver.
+
+  For postfix add &apos;disable_vrfy_command=yes&apos; in &apos;main.cf&apos;.
+
+  For Sendmail add the option &apos;O PrivacyOptions=goaway&apos;.
+
+  It is suggested that, if you really want to publish this type of information, you use a mechanism
+  that legitimate users actually know about, such as Finger or HTTP.</solution><refs><ref type="url" id="http://cr.yp.to/smtp/vrfy.html"/></refs></nvt><scan_nvt_version>2023-10-31T05:06:37Z</scan_nvt_version><threat>Medium</threat><severity>5.0</severity><qod><value>99</value><type></type></qod><description>&apos;VRFY root&apos; produces the following answer: 252 2.0.0 root
+
+
+</description><original_threat>Medium</original_threat><original_severity>5</original_severity><compliance>undefined</compliance></result><result id="f29c6faa-885e-458c-a3e7-c69ce4bc3338"><name>Cleartext Transmission of Sensitive Information via HTTP</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:58:38Z</modification_time><comment></comment><creation_time>2026-06-30T21:58:38Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>80/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108440"><type>nvt</type><name>Cleartext Transmission of Sensitive Information via HTTP</name><family>Web application abuses</family><cvss_base>4.8</cvss_base><severities score="4.8"><severity type="cvss_base_v2"><origin></origin><date>2018-04-16T13:31:23Z</date><score>4.8</score><value>AV:A/AC:L/Au:N/C:P/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:A/AC:L/Au:N/C:P/I:P/A:N|summary=The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.|insight=|affected=Hosts / applications which doesn&apos;t enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.|impact=An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.|solution=Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.|vuldetect=Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type &apos;password&apos;|solution_type=Workaround</tags><solution type='Workaround'>Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.</solution><refs><ref type="url" id="https://www.owasp.org/index.php/Top_10_2013-A2-Broken_Authentication_and_Session_Management"/><ref type="url" id="https://www.owasp.org/index.php/Top_10_2013-A6-Sensitive_Data_Exposure"/><ref type="url" id="https://cwe.mitre.org/data/definitions/319.html"/></refs></nvt><scan_nvt_version>2023-09-07T05:05:21Z</scan_nvt_version><threat>Medium</threat><severity>4.8</severity><qod><value>80</value><type></type></qod><description>The following input fields were identified (URL:input name):
+
+http://192.168.40.3/dvwa/login.php:password
+http://192.168.40.3/phpMyAdmin/:pma_password
+http://192.168.40.3/phpMyAdmin/?D=A:pma_password
+http://192.168.40.3/tikiwiki/tiki-install.php:pass
+http://192.168.40.3/twiki/bin/view/TWiki/TWikiUserAuthentication:oldpassword
+</description><original_threat>Medium</original_threat><original_severity>4.8</original_severity><compliance>undefined</compliance></result><result id="447f73f5-8337-4be1-ac6b-5b53845b9fdf"><name>CPE Inventory</name><owner><name>admin</name></owner><modification_time>2026-06-30T01:12:58Z</modification_time><comment></comment><creation_time>2026-06-30T01:12:58Z</creation_time><report id="63ba50a5-e162-4111-b511-1010406a0002"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id="bba1da79-6f71-46f5-b413-007603512d3e"/><hostname></hostname></host><port>general/CPE-T</port><nvt oid="1.3.6.1.4.1.25623.1.0.810002"><type>nvt</type><name>CPE Inventory</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-11-18T10:43:05Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://nvd.nist.gov/products/cpe"/></refs></nvt><scan_nvt_version>2022-07-27T10:11:28Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>192.168.40.3|cpe:/o:linux:kernel
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="dedc9ee0-5f85-48cf-8d24-93078cfc879f"><name>CPE Inventory</name><owner><name>admin</name></owner><modification_time>2026-06-30T22:11:46Z</modification_time><comment></comment><creation_time>2026-06-30T22:11:46Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>general/CPE-T</port><nvt oid="1.3.6.1.4.1.25623.1.0.810002"><type>nvt</type><name>CPE Inventory</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-11-18T10:43:05Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://nvd.nist.gov/products/cpe"/></refs></nvt><scan_nvt_version>2022-07-27T10:11:28Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>192.168.40.3|cpe:/a:apache:http_server:2.2.8
+192.168.40.3|cpe:/a:ietf:secure_shell_protocol:2.0
+192.168.40.3|cpe:/a:ietf:secure_sockets_layer:2.0
+192.168.40.3|cpe:/a:ietf:secure_sockets_layer:3.0
+192.168.40.3|cpe:/a:ietf:transport_layer_security:1.0
+192.168.40.3|cpe:/a:isc:bind:9.4.2
+192.168.40.3|cpe:/a:jquery:jquery:1.3.2
+192.168.40.3|cpe:/a:mysql:mysql:5.0.51a
+192.168.40.3|cpe:/a:openbsd:openssh:4.7p1
+192.168.40.3|cpe:/a:oracle:mysql:5.0.51a
+192.168.40.3|cpe:/a:php:php:5.2.4
+192.168.40.3|cpe:/a:phpmyadmin:phpmyadmin:3.1.1
+192.168.40.3|cpe:/a:postfix:postfix
+192.168.40.3|cpe:/a:postgresql:postgresql:8.3.1
+192.168.40.3|cpe:/a:proftpd:proftpd:1.3.1
+192.168.40.3|cpe:/a:samba:samba:3.0.20
+192.168.40.3|cpe:/a:twiki:twiki:01.Feb.2003
+192.168.40.3|cpe:/o:canonical:ubuntu_linux:8.04
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="fdaa261b-192d-4bff-b090-e500475c37e7"><name>Database Open Access Information Disclosure Vulnerability</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:42:13Z</modification_time><comment></comment><creation_time>2026-06-30T21:42:13Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>3306/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.902799"><type>nvt</type><name>Database Open Access Information Disclosure Vulnerability</name><family>Databases</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2012-03-01T11:40:53Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Various Database server might be prone to an information
+  disclosure vulnerability if accessible to remote systems.|insight=The remote database server is not restricting direct access from
+  remote systems.|affected=- Oracle MySQL
+
+  - MariaDB
+
+  - IBM DB2
+
+  - PostgreSQL
+
+  - IBM solidDB
+
+  - Oracle Database
+
+  - Microsoft SQL Server|impact=Successful exploitation could allow an attacker to obtain
+  sensitive information from the database.|solution=Restrict database access to remote systems. Please see the
+  manual of the affected database server for more information.|vuldetect=Checks the result of various database server detections and
+  evaluates their results.|solution_type=Workaround</tags><solution type='Workaround'>Restrict database access to remote systems. Please see the
+  manual of the affected database server for more information.</solution><refs><ref type="url" id="https://www.pcisecuritystandards.org/security_standards/index.php?id=pci_dss_v1-2.pdf"/></refs></nvt><scan_nvt_version>2025-09-09T05:38:49Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Oracle MySQL can be accessed by remote attackers
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=1 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>1</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="1" max="10"/><result_count>619<filtered>147</filtered><page>10</page></result_count></get_results_response>

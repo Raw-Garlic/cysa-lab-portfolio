@@ -1,0 +1,97 @@
+<get_results_response status="200" status_text="OK"><result id="136e2f85-7956-41cf-b634-883298ec21e9"><name>SMB Login Successful For Authenticated Checks</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:59:29Z</modification_time><comment></comment><creation_time>2026-06-30T21:59:29Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.108539"><type>nvt</type><name>SMB Login Successful For Authenticated Checks</name><family>Windows</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2019-01-23T14:50:49Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=It was possible to login using the provided SMB
+  credentials. Hence authenticated checks are enabled.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2023-07-28T16:09:07Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description></description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="1cbc64cd-73fe-4fa7-b0d2-43d44375e2af"><name>SMB NativeLanMan</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:39:32Z</modification_time><comment></comment><creation_time>2026-06-30T21:39:32Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.102011"><type>nvt</type><name>SMB NativeLanMan</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-09-18T14:06:42Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=It is possible to extract OS, domain and SMB server information
+  from the Session Setup AndX Response packet which is generated during NTLM authentication.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2024-06-25T05:05:27Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>95</value><type></type></qod><description>Detected SMB workgroup: WORKGROUP
+Detected SMB server: Samba 3.0.20-Debian
+Detected OS: Debian GNU/Linux
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="d40df121-653a-44f3-b0dc-7ee4fbd50378"><name>SMB NativeLanMan</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:39:32Z</modification_time><comment></comment><creation_time>2026-06-30T21:39:32Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.102011"><type>nvt</type><name>SMB NativeLanMan</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-09-18T14:06:42Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=It is possible to extract OS, domain and SMB server information
+  from the Session Setup AndX Response packet which is generated during NTLM authentication.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2024-06-25T05:05:27Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>95</value><type></type></qod><description>Detected Samba
+
+Version:       3.0.20
+Location:      445/tcp
+CPE:           cpe:/a:samba:samba:3.0.20
+
+Concluded from version/product identification result:
+Samba 3.0.20-Debian
+
+Extra information:
+Detected SMB workgroup: WORKGROUP
+Detected SMB server: Samba 3.0.20-Debian
+
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="0dfcdf23-18ca-489a-86fe-67713ddb19fb"><name>SMB Remote Version Detection</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:54:56Z</modification_time><comment></comment><creation_time>2026-06-30T21:54:56Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.807830"><type>nvt</type><name>SMB Remote Version Detection</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2016-06-08T03:44:21Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detection of Server Message Block(SMB).
+
+  This script sends SMB Negotiation request and try to get the version from the
+  response.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2023-07-26T05:05:09Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Only SMBv1 is enabled on remote target
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="38d6588e-08ac-4db4-b228-5566d60e2a74"><name>SMBv1 Enabled - Active Check</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:57:57Z</modification_time><comment></comment><creation_time>2026-06-30T21:57:57Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>445/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.140151"><type>nvt</type><name>SMBv1 Enabled - Active Check</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2017-02-04T08:33:13Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The host has enabled SMBv1 for the SMB Server.|insight=|affected=|impact=|solution=|vuldetect=Checks if SMBv1 is enabled for the SMB Server based on the
+  information provided by the following VT:
+
+  - SMB Remote Version Detection (OID: 1.3.6.1.4.1.25623.1.0.807830).|solution_type=</tags><solution type=''></solution><refs><ref type="url" id="https://www.us-cert.gov/ncas/current-activity/2017/01/16/SMB-Security-Best-Practices"/><ref type="url" id="https://support.microsoft.com/en-us/kb/2696547"/><ref type="url" id="https://support.microsoft.com/en-us/kb/204279"/></refs></nvt><scan_nvt_version>2024-01-09T05:06:46Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>SMBv1 is enabled for the SMB Server
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="3d9f4ced-aa7f-42f1-93a5-248fad06135b"><name>SMTP Server type and version</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:40:28Z</modification_time><comment></comment><creation_time>2026-06-30T21:40:28Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>25/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.10263"><type>nvt</type><name>SMTP Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2005-11-03T13:08:04Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the SMTP Server&apos;s type and version by connecting to
+  the server and processing the buffer received.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-01-07T05:47:44Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Remote SMTP server banner:
+
+220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+
+The remote SMTP server is announcing the following available ESMTP commands (EHLO response) via an unencrypted connection:
+
+8BITMIME, DSN, ENHANCEDSTATUSCODES, ETRN, PIPELINING, SIZE 10240000, STARTTLS, VRFY
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="40d4e5b2-4bd5-480a-9210-005ae8b10191"><name>SSH Protocol Algorithms Supported</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:42:58Z</modification_time><comment></comment><creation_time>2026-06-30T21:42:58Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.105565"><type>nvt</type><name>SSH Protocol Algorithms Supported</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2016-03-09T07:39:30Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script detects which algorithms are supported by the remote
+  SSH service.|insight=|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-06-23T06:54:08Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>The following options are supported by the remote SSH service:
+
+kex_algorithms:
+diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+
+server_host_key_algorithms:
+ssh-rsa,ssh-dss
+
+encryption_algorithms_client_to_server:
+aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour128,arcfour256,arcfour,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+
+encryption_algorithms_server_to_client:
+aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour128,arcfour256,arcfour,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+
+mac_algorithms_client_to_server:
+hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+
+mac_algorithms_server_to_client:
+hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+
+compression_algorithms_client_to_server:
+none,zlib@openssh.com
+
+compression_algorithms_server_to_client:
+none,zlib@openssh.com
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="bee633a3-8685-4b07-91e5-962831fd10d3"><name>SSH Protocol Versions Supported</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:42:58Z</modification_time><comment></comment><creation_time>2026-06-30T21:42:58Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.100259"><type>nvt</type><name>SSH Protocol Versions Supported</name><family>Service detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2009-08-25T19:06:41Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Identification of SSH protocol versions supported by the remote
+  SSH Server. Also reads the corresponding fingerprints from the service.|insight=|affected=|impact=|solution=|vuldetect=The following versions are tried: 1.33, 1.5, 1.99 and 2.0.|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2024-06-17T08:31:37Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>95</value><type></type></qod><description>The remote SSH Server supports the following SSH Protocol Versions:
+1.99
+2.0
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="bc9672af-344e-4579-bdef-f7948c6bfabd"><name>SSH Server type and version</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:42:33Z</modification_time><comment></comment><creation_time>2026-06-30T21:42:33Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>22/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.10267"><type>nvt</type><name>SSH Server type and version</name><family>Product detection</family><cvss_base>0.0</cvss_base><severities score="0.0"><severity type="cvss_base_v2"><origin></origin><date>2006-03-26T15:55:15Z</date><score>0.0</score><value>AV:N/AC:L/Au:N/C:N/I:N/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the SSH Server&apos;s type and version by connecting to
+  the server and processing the buffer received.|insight=This information gives potential attackers additional
+  information about the system they are attacking. Versions and Types should be omitted where
+  possible.|affected=|impact=|solution=|vuldetect=|solution_type=</tags><solution type=''></solution></nvt><scan_nvt_version>2026-06-04T07:09:46Z</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type></type></qod><description>Remote SSH server banner: SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1
+Remote SSH supported authentication: none,password,publickey,hostbased,keyboard-interactive
+Remote SSH text/login banner: (not available)
+
+This is probably (a):
+
+- OpenSSH
+
+Concluded from remote connection attempt with credentials:
+
+Login:    OpenVASVT
+Password: OpenVASVT
+</description><original_threat>Log</original_threat><original_severity>0</original_severity><compliance>undefined</compliance></result><result id="49b827a4-1530-407b-8402-2d67bd626000"><name>SSL/TLS: Certificate Expired</name><owner><name>admin</name></owner><modification_time>2026-06-30T21:57:57Z</modification_time><comment></comment><creation_time>2026-06-30T21:57:57Z</creation_time><report id="4439ee96-cd3d-4044-8d62-d318f3959c28"/><task id="2ec07ffa-ec97-4b49-98ae-8094782b4aa0"><name>Metasploitable2 Full Scan</name></task><host>192.168.40.3<asset asset_id=""/><hostname></hostname></host><port>5432/tcp</port><nvt oid="1.3.6.1.4.1.25623.1.0.103955"><type>nvt</type><name>SSL/TLS: Certificate Expired</name><family>SSL and TLS</family><cvss_base>5.0</cvss_base><severities score="5.0"><severity type="cvss_base_v2"><origin></origin><date>2013-11-25T05:37:04Z</date><score>5.0</score><value>AV:N/AC:L/Au:N/C:N/I:P/A:N</value></severity></severities><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:P/A:N|summary=The remote server&apos;s SSL/TLS certificate has already expired.|insight=This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.|affected=|impact=|solution=Replace the SSL/TLS certificate by a new one.|vuldetect=|solution_type=Mitigation</tags><solution type='Mitigation'>Replace the SSL/TLS certificate by a new one.</solution></nvt><scan_nvt_version>2026-03-13T05:54:58Z</scan_nvt_version><threat>Medium</threat><severity>5.0</severity><qod><value>99</value><type></type></qod><description>The certificate of the remote service expired on 2010-04-16 14:07:45.
+
+Certificate details:
+fingerprint (SHA-1)             | ED093088706603BFD5DC237399B498DA2D4D31C6
+fingerprint (SHA-256)           | E7A7FA0D63E457C7C4A59B38B70849C6A70BDA6F830C7AF1E32DEE436DE813CC
+issued by                       | 1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+public key algorithm            | RSA
+public key size (bits)          | 1024
+serial                          | 00FAF93A4C7FB6B9CC
+signature algorithm             | sha1WithRSAEncryption
+subject                         | 1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+subject alternative names (SAN) | None
+valid from                      | 2010-03-17 14:07:45 UTC
+valid until                     | 2010-04-16 14:07:45 UTC
+</description><original_threat>Medium</original_threat><original_severity>5</original_severity><compliance>undefined</compliance></result><filters id=""><term>apply_overrides=0 min_qod=70 task_id=2ec07ffa-ec97-4b49-98ae-8094782b4aa0 rows=10 first=81 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>task_id</column><relation>=</relation><value>2ec07ffa-ec97-4b49-98ae-8094782b4aa0</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>first</column><relation>=</relation><value>81</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><results start="81" max="10"/><result_count>619<filtered>147</filtered><page>10</page></result_count></get_results_response>
